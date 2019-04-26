@@ -6,6 +6,7 @@ import logging
 import telebot
 import urllib3
 
+from datetime import datetime
 from copy import deepcopy
 
 from tools import telegram_tools
@@ -236,7 +237,8 @@ def main(estatus=''):
 
 if __name__ == '__main__':
     logging.basicConfig(level=levels[level_log],
-                        format='%(asctime)s - %(lineno)d - %(name)s - %(message)s')
+                        format='%(asctime)s - %(lineno)d - %(name)s - %(message)s',
+                        filename=f'My_admin_log{datetime.today().date()}.log')
     if not os.path.exists('database'):
         os.mkdir('database')
     if not os.path.exists(tools_sqlite.name_database):
