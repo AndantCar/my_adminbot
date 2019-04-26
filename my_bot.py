@@ -67,7 +67,6 @@ def callback_start(message):
     except TypeError:
         logger.warning('Error al obtener el chat_id')
     else:
-        print(message)
         if tools_sqlite.user_exist(tools_sqlite.create_connection(tools_sqlite.name_database),
                                    chat_id):
             message_to_send = MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
@@ -183,7 +182,6 @@ def texto_libre(message):
 
 @payment_bot.callback_query_handler(func=lambda message: True)
 def callback_generic(message):
-    print('Here')
     try:
         chat_id, message_id = telegram_tools.get_chat_id_and_message_id(message, True, tools_sqlite.name_database)
     except TypeError:
@@ -216,26 +214,27 @@ def main(estatus=''):
     :return:
     """
     print(f'Status: {estatus}')
-    # try:
     try:
-        payment_bot.polling(none_stop=True, timeout=20)
-    except telebot.apihelper.ApiException:
-        # telegram_tools.send_message()
-        print('nada')
-    except KeyboardInterrupt:
-        payment_bot.stop_polling()
-        payment_bot.stop_bot()
-    finally:
         try:
-            aviso_de_mantenimiento()
-        except Exception as details:
-            logger.error(f'Error al enviar el aviso: {details}')
-        logger.info('Finish')
-    # except urllib3.exceptions.MaxRetryError:
-    #     main('retinteno')
+            payment_bot.polling(none_stop=True, timeout=20)
+        except telebot.apihelper.ApiException:
+            # telegram_tools.send_message()
+            pass
+        except KeyboardInterrupt:
+            payment_bot.stop_polling()
+            payment_bot.stop_bot()
+        finally:
+            try:
+                aviso_de_mantenimiento()
+            except Exception as details:
+                logger.error(f'Error al enviar el aviso: {details}')
+            logger.info('Finish')
+    except urllib3.exceptions.MaxRetryError:
+        main('retinteno')
 
 
 if __name__ == '__main__':
+    print('Inicializando el bot')
     logging.basicConfig(level=levels[level_log],
                         format='%(asctime)s - %(lineno)d - %(name)s - %(message)s',
                         filename=f'My_admin_log{datetime.today().date()}.log')
@@ -244,3 +243,4 @@ if __name__ == '__main__':
     if not os.path.exists(tools_sqlite.name_database):
         tools_sqlite.make_database_and_tables()
     main()
+    print('Finalizo el proceso')
