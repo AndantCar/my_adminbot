@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- encoding:utf-8 -*-
+
 import os
 import sqlite3
 from sqlite3 import Error
