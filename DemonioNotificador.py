@@ -23,13 +23,14 @@ class CheckStatus(Thread):
             if notification <= datetime.today().replace(minute=0, second=0, microsecond=0):
                 fechas = get_all_dates(create_connection(name_database))
                 for fecha in fechas:
-                    date_time_obj = datetime.strptime(fecha, '%Y-%m-%d')
-                    hoy = datetime.today()
-                    if date_time_obj.date() == hoy.date() or \
-                            date_time_obj.date() == hoy.replace(day=hoy.day + 1).date():
-                        for user in fechas[fecha]:
-                            send_message(user, f'{get_name(create_connection(name_database), user[0])} '
-                            f'No olvides realizar el pago de: {user[1]}', self.__token)
+                    if fecha:
+                        date_time_obj = datetime.strptime(fecha, '%Y-%m-%d')
+                        hoy = datetime.today()
+                        if date_time_obj.date() == hoy.date() or \
+                                date_time_obj.date() == hoy.replace(day=hoy.day + 1).date():
+                            for user in fechas[fecha]:
+                                send_message(user, f'{get_name(create_connection(name_database), user[0])} '
+                                                   f'No olvides realizar el pago de: {user[1]}', self.__token)
                 notification = datetime.today().replace(day=notification.day+1,
                                                         hour=12, minute=0, second=0,
                                                         microsecond=0)
