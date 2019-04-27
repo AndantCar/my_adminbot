@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30bb1229-d069-409e-a10e-3246eae35502" name="Default Changelist" comment="primer commit">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/base_payments.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/complementos.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/complementos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/telegram_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/telegram_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/tools_sqlite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools_sqlite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +21,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="245" column="30" selection-start-line="245" selection-start-column="30" selection-end-line="245" selection-end-column="30" />
+            <state relative-caret-position="319">
+              <caret line="208" column="25" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
               <folding>
                 <element signature="e#45#54#0" expanded="true" />
+                <element signature="e#8373#8642#0" />
+                <element signature="e#9591#10026#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="db://00b29a92-2094-4557-a500-a8f61648760a/consoles/Connection">
+          <provider selected="true" editor-type-id="0.CONSOLE">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -32,10 +49,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/telegram_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="259">
+              <caret line="393" column="30" selection-start-line="393" selection-start-column="30" selection-end-line="393" selection-end-column="30" />
               <folding>
                 <element signature="e#44#59#0" expanded="true" />
+                <element signature="e#6081#7202#0" />
               </folding>
             </state>
           </provider>
@@ -44,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/complementos.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="242">
+              <caret line="21" column="98" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -63,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/tools_sqlite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="30">
+              <caret line="207" column="18" selection-start-line="207" selection-start-column="4" selection-end-line="207" selection-end-column="18" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -76,7 +94,28 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>empe</find>
+      <find>Limpiar chat</find>
+      <find>show</find>
+      <find>MARKUP_LISTA_DE_PAGOS</find>
+      <find>delete_message</find>
+      <find>BOT_DICT_FLAGS</find>
+      <find>add_payment_date</find>
+      <find>delete_all</find>
+      <find>Pen</find>
+      <find>restart_flags</find>
       <find>print</find>
+      <find>new</find>
+      <find>add_date_of_payment</find>
+      <find>get_message</find>
+      <find>Lista De Gastos</find>
+      <find>show_list</find>
+      <find>MESSAGE_ADD_DATE</find>
+      <find>texto libre</find>
+      <find>Asigne con que recurrencia se realizara el pago</find>
+      <find>delete</find>
+      <find>help</find>
+      <find>NAME_PAYMENT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,9 +129,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="00b29a92-2094-4557-a500-a8f61648760a/consoles/Connection" />
+        <option value="$PROJECT_DIR$/tools/telegram_tools.py" />
         <option value="$PROJECT_DIR$/tools/complementos.py" />
         <option value="$PROJECT_DIR$/tools/tools_sqlite.py" />
-        <option value="$PROJECT_DIR$/tools/telegram_tools.py" />
         <option value="$PROJECT_DIR$/my_bot.py" />
       </list>
     </option>
@@ -130,6 +170,11 @@
             <path>
               <item name="my_adminbot" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_adminbot" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_adminbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_adminbot" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -154,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.my_bot">
     <configuration name="my_bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="my_adminbot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,9 +221,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tools_sqlite" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="my_adminbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/tools_sqlite.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.my_bot" />
+        <item itemvalue="Python.tools_sqlite" />
       </list>
     </recent_temporary>
   </component>
@@ -201,17 +268,17 @@
     <layout>
       <window_info id="DB Browser" weight="0.3296131" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122023806" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.122023806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="DB Execution Console" />
+      <window_info anchor="bottom" id="DB Execution Console" weight="0.9516908" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38486314" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -228,23 +295,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/my_bot.py</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tools/telegram_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#44#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tools/bot_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -254,38 +311,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/__init__.py">
+    <entry file="file://$PROJECT_DIR$/tools/tools.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/complementos.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/telebot/types.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        <state relative-caret-position="198">
+          <caret line="855" column="8" selection-start-line="855" selection-start-column="8" selection-end-line="855" selection-end-column="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/texts_out.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/tools.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/tools/telegram_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="393" column="30" selection-start-line="393" selection-start-column="30" selection-end-line="393" selection-end-column="30" />
+          <folding>
+            <element signature="e#44#59#0" expanded="true" />
+            <element signature="e#6081#7202#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="db://00b29a92-2094-4557-a500-a8f61648760a/consoles/Connection">
+      <provider selected="true" editor-type-id="0.CONSOLE">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/tools_sqlite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="207" column="18" selection-start-line="207" selection-start-column="4" selection-end-line="207" selection-end-column="18" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tools/complementos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="21" column="98" selection-start-line="21" selection-start-column="84" selection-end-line="21" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my_bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="245" column="30" selection-start-line="245" selection-start-column="30" selection-end-line="245" selection-end-column="30" />
+        <state relative-caret-position="319">
+          <caret line="208" column="25" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
+            <element signature="e#8373#8642#0" />
+            <element signature="e#9591#10026#0" />
           </folding>
         </state>
       </provider>

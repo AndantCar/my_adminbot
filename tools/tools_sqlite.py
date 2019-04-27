@@ -2,6 +2,7 @@
 # -*- encoding:utf-8 -*-
 
 import os
+import re
 import sqlite3
 from sqlite3 import Error
 from datetime import datetime
@@ -39,8 +40,6 @@ def create_table(conn, create_table_sql):
 
 
 def make_database_and_tables():
-    database = os.path.join(os.getcwd(), name_database)
-
     sql_create_users_table = """ CREATE TABLE IF NOT EXISTS users (
                                         id integer PRIMARY KEY,
                                         name text NOT NULL,
@@ -62,7 +61,7 @@ def make_database_and_tables():
                                         message_id integer NOT NULL,
                                         chat_id integer NOT NULL)'''
     # create a database connection
-    conn = create_connection(database)
+    conn = create_connection(name_database)
     if conn is not None:
         with conn:
             create_table(conn, sql_create_users_table)
@@ -201,8 +200,23 @@ def delete_all_message_id_db(conn, chat_id):
     :return:
     """
     sql = f'''DELETE FROM messages_ids WHERE chat_id=? '''
-    cur = conn.cursor()
-    cur.execute(sql, (chat_id,))
+    with conn:
+        cur = conn.cursor()
+        cur.execute(sql, (chat_id,))
+
+
+def delete_payment(conn, chat_id, name_payment):
+    """
+
+    :param conn:
+    :param chat_id:
+    :param name_payment:
+    :return:
+    """
+    sql = f'''DELETE FROM payments WHERE chat_id=? AND name=? '''
+    with conn:
+        cur = conn.cursor()
+        cur.execute(sql, (chat_id, name_payment))
 
 
 def get_all_users(conn):
@@ -219,7 +233,6 @@ def get_all_users(conn):
     return chat_ids
 
 
-
 def get_status_payment(conn, name_payment, chat_id):
     """
 
@@ -232,20 +245,77 @@ def get_status_payment(conn, name_payment, chat_id):
     cur = conn.cursor()
     cur.execute(sql)
     rows = cur.fetchall()
-    #chat_ids = [chat_id[0] for chat_id in rows]
     return rows
-    #return chat_ids
+
+
+def add_date_of_payment(conn, chat_id, str_fecha, name):
+    """
+
+    Args:
+        conn:
+        chat_id:
+        str_fecha(str):
+
+    Returns:
+
+    """
+    re_dias = re.compile(r'[1-2][0-9]|3[0-1]|[1-9]')
+    dias = re_dias.findall(str_fecha)
+    dia, flag, fecha = 0, 0, None
+    if len(dias) == 1:
+        dia = int(dias[0])
+        if str_fecha.replace(dias[0], '').lower() == 'm':
+            flag = 1
+    if flag and dia:
+        if flag == 1:
+            fecha = datetime.today().replace(day=dia)
+            if fecha < datetime.today():
+                fecha = fecha.replace(month=fecha.month+1)
+    if fecha:
+        end_date = f'{fecha.replace(month=fecha.month+1).date()}'
+        begin_date = f'{fecha.date()}'
+        params = (begin_date, end_date, chat_id, name)
+        sql = ''' UPDATE payments SET begin_date=?, end_date=? WHERE chat_id=? AND name=?'''
+        with conn:
+            cur = conn.cursor()
+            cur.execute(sql, params)
+        return None
+    else:
+        return 'La fecha ingresada no es valida.'
+
+
+def update_status(conn, chat_id):
+    """
+    Args:
+        conn:
+        chat_id:
+
+    Returns:
+
+    """
+    sql = ''' UPDATE payments SET status_id=? WHERE chat_id=?'''
+    params = (1, chat_id)
+    with conn:
+        cur = conn.cursor()
+        cur.execute(sql, params)
 
 
 if __name__ == '__main__':
-    if not os.path.exists(os.path.join(os.getcwd(), name_database)):
+    name_database = os.path.join(os.getcwd(), 'base_payments.db')
+    if not os.path.exists(name_database):
+        print('1')
         make_database_and_tables()
     # main()
-    # create_user(create_connection(name_database), ('carlos', '1234'))
+    create_user(create_connection(name_database), ('carlos', '1234'))
     # save_message_id(create_connection(name_database), '123454321', '1234')
     # print(get_all_message_id(create_connection(name_database), '1234'))
-    # create_payment(create_connection(name_database), 'renta', 1234)
+    create_payment(create_connection(name_database), 'renta', 1234)
     # print(payments_list(create_connection(name_database), '1234'))
     # print(get_all_users(create_connection(name_database)))
     # print(get_user(create_connection(name_database), '1231'))
-    get_status_payment(create_connection(name_database), 'renta', 547815968)
+    add_date_of_payment(create_connection(name_database), 1234, '15M')
+    update_status(create_connection(name_database), 1234)
+    print(get_status_payment(create_connection(name_database), 'renta', 1234))
+
+
+

@@ -166,7 +166,8 @@ def get_chat_id_and_message_id(message, save_in_database=False, name_database=''
     #           f'Hora de recepcion: {fecha}')
     #     return None
     if save_in_database:
-        save_message_id(create_connection(name_database), message_id, chat_id)
+        if not (message_id in get_all_message_id(create_connection(name_database), chat_id)):
+            save_message_id(create_connection(name_database), message_id, chat_id)
     return chat_id, message_id
 
 
@@ -234,6 +235,58 @@ def make_buttons_of_dict(estructure, rows=3):
     if len(buttons) > 0:
         keyboard_markup.row(*buttons)
     return keyboard_markup
+
+
+def make_keyboard_button(name_button, callback_data=None):
+    """
+    Crea una instancia de un InlineKeyboardButton sin asignarlo a algun markup
+
+    Args:
+        name_button(str): Boton que se quieresn agregar
+        callback_data(str): Comando al
+
+    Returns:
+    """
+    try:
+        if callback_data:
+            keyboard_button = types.InlineKeyboardButton(name_button, callback_data=callback_data)
+        else:
+            keyboard_button = types.InlineKeyboardButton(name_button, callback_data=name_button)
+    except Exception as details:
+        logger.error('No fue posible crear el boton {}\n'
+                     'Details: {}'.format(name_button, details))
+    else:
+        return keyboard_button
+
+
+def add_button_of_list2markup(markup, buttons):
+    """
+    Añade botones a un markup a partir de una lista
+
+    Args:
+        markup(types.InlineKeyboardMarkup):
+        buttons(list, tuple, dict): Conjunto de botones que se quieren agregar,
+        en caso de ser una tupla o lista el comando que se asociara al boton sera igual al nombre del mismo,
+        en caso de que se pase un diccionario como argumento se tomara la llave como nombre del boton y el valor
+        como comando.
+
+    Returns:
+         Markup con los nuevos botones
+    """
+
+    new_buttons = []
+    for name_buton in buttons:
+        if isinstance(buttons, dict):
+            new_buttons.append(make_keyboard_button(name_buton, buttons[name_buton]))
+        elif isinstance(buttons, (tuple, list)):
+            new_buttons.append(make_keyboard_button(name_buton, name_buton))
+        if len(new_buttons) == 3:
+            markup.row(*new_buttons)
+            new_buttons = []
+    if len(new_buttons) != 0:
+        markup.row(*new_buttons)
+        del new_buttons
+    return markup
 
 
 def read_json(path):
@@ -325,7 +378,8 @@ def add_button_cancel(markup, estructure=None):
     return markup
 
 
-def make_button_of_list(names_buttons, rows=3, commands=False, callback=False, add_back_button=False):
+def make_button_of_list(names_buttons, rows=3, commands=False, callback=False, add_back_button=False,
+                        name_comand_back='start'):
     """
     Crea una estructura de botones a partir de una lista
     Solo se podra mostra un maximo de 100 botones en pantalla, para
@@ -337,6 +391,7 @@ def make_button_of_list(names_buttons, rows=3, commands=False, callback=False, a
         commands(bool): Define si los botones creados seran comandos.
         callback(bool): Define si los botones se usaran para un callback_query_handler
         add_back_button(bool):
+        name_comand_back(str):
 
     Returns:
         keyboard_markup(types.InlineKeyboardMarkup): Markup con los botones.
@@ -375,7 +430,7 @@ def make_button_of_list(names_buttons, rows=3, commands=False, callback=False, a
     if len(butons) > 0:
         keyboard_markup.row(*butons)
     if add_back_button:
-        keyboard_markup.row(types.InlineKeyboardButton('Ir a inicio', callback_data='go_start'))
+        keyboard_markup.row(types.InlineKeyboardButton('<< Ir a inicio', callback_data=name_comand_back))
     return keyboard_markup
 
 
@@ -404,7 +459,6 @@ def delete_all_message(token, chat_id, name_database):
     message_ids = get_all_message_id(create_connection(name_database), chat_id)
     for message_id in message_ids:
         delete_message(token, chat_id, message_id)
-
 
 
 def dataframe2json(data_frame):
