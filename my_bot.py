@@ -314,25 +314,26 @@ def main(estatus='Iniciando'):
     """
     print(f'Status: {estatus}')
     try:
-        try:
-            payment_bot.polling()
-        except telebot.apihelper.ApiException:
-            # telegram_tools.send_message()
-            pass
-        except KeyboardInterrupt:
-            try:
-                payment_bot.stop_polling()
-                payment_bot.stop_bot()
-                aviso_de_mantenimiento()
-            except Exception as details:
-                logger.error(f'Error al enviar el aviso: {details}')
-            logger.info('Finish')
+        payment_bot.polling()
+    except telebot.apihelper.ApiException:
+        payment_bot.stop_polling()
+        payment_bot.stop_bot()
+        aviso_de_mantenimiento('Error en la api del bot')
+    except KeyboardInterrupt:
+        payment_bot.stop_polling()
+        payment_bot.stop_bot()
+        aviso_de_mantenimiento()
+        logger.info('Finish')
     except (urllib3.exceptions.MaxRetryError, requests.exceptions.ReadTimeout) as details:
+        payment_bot.stop_polling()
+        payment_bot.stop_bot()
         aviso_de_mantenimiento(details)
         main('retinteno')
     except requests.exceptions.ConnectionError as details:
+        payment_bot.stop_polling()
+        payment_bot.stop_bot()
         time.sleep(20)
-        aviso_de_mantenimiento(details)
+        aviso_de_mantenimiento(str(details))
         main('retinteno por falta de internet')
 
 

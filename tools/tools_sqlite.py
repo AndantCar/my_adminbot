@@ -326,7 +326,6 @@ def get_all_dates(conn):
     cur.execute(sql)
     rows = cur.fetchall()
     messages_ids = {}
-    print(rows)
     for name in rows:
         if not name[2]:
             if not (name[1] in messages_ids):

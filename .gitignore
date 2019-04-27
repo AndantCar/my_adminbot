@@ -1,5 +1,6 @@
 *.pyc
 database
 *bd
-/.idea
+.idea
 *.log
+.idea/*
