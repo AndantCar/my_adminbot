@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30bb1229-d069-409e-a10e-3246eae35502" name="Default Changelist" comment="primer commit">
-      <change afterPath="$PROJECT_DIR$/DemonioNotificador.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_payments.bd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_admin_log2019-04-26.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/base_payments.bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/base_payments.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/tools_sqlite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools_sqlite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,24 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="346" column="29" selection-start-line="346" selection-start-column="18" selection-end-line="346" selection-end-column="29" />
+            <state relative-caret-position="165">
+              <caret line="334" column="38" selection-start-line="334" selection-start-column="38" selection-end-line="334" selection-end-column="38" />
               <folding>
                 <element signature="e#45#54#0" expanded="true" />
-                <element signature="e#8373#8642#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DemonioNotificador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+            <state relative-caret-position="389">
+              <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
               <folding>
                 <element signature="e#45#56#0" expanded="true" />
               </folding>
@@ -125,8 +117,8 @@
       <find>SELECT</find>
       <find>name</find>
       <find>users</find>
-      <find>iniciaido</find>
       <find>print</find>
+      <find>iniciaido</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,8 +137,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="00b29a92-2094-4557-a500-a8f61648760a/consoles/Connection" />
         <option value="$PROJECT_DIR$/tools/tools_sqlite.py" />
-        <option value="$PROJECT_DIR$/my_bot.py" />
         <option value="$PROJECT_DIR$/DemonioNotificador.py" />
+        <option value="$PROJECT_DIR$/my_bot.py" />
       </list>
     </option>
   </component>
@@ -166,11 +158,6 @@
             <path>
               <item name="my_adminbot" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_adminbot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_adminbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_adminbot" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_adminbot" type="b2602c69:ProjectViewProjectNode" />
@@ -292,11 +279,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="DB Browser" weight="0.3296131" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.122023806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122023806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="DB Execution Console" weight="0.9516908" />
       <window_info anchor="bottom" id="Version Control" />
@@ -397,23 +383,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_bot.py">
+    <entry file="file://$PROJECT_DIR$/DemonioNotificador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="346" column="29" selection-start-line="346" selection-start-column="18" selection-end-line="346" selection-end-column="29" />
+        <state relative-caret-position="389">
+          <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
           <folding>
-            <element signature="e#45#54#0" expanded="true" />
-            <element signature="e#8373#8642#0" />
+            <element signature="e#45#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DemonioNotificador.py">
+    <entry file="file://$PROJECT_DIR$/my_bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        <state relative-caret-position="165">
+          <caret line="334" column="38" selection-start-line="334" selection-start-column="38" selection-end-line="334" selection-end-column="38" />
           <folding>
-            <element signature="e#45#56#0" expanded="true" />
+            <element signature="e#45#54#0" expanded="true" />
           </folding>
         </state>
       </provider>

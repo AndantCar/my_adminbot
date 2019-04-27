@@ -299,10 +299,10 @@ def restart_flags():
     NAME_PAYMENT = ''
 
 
-def aviso_de_mantenimiento():
+def aviso_de_mantenimiento(message='El bot entrara en mantenimiento.'):
     users = tools_sqlite.get_all_users(tools_sqlite.create_connection(tools_sqlite.name_database))
     for user in users:
-        telegram_tools.send_message(user, 'El bot entrara en mantenimiento.', TOKEN)
+        telegram_tools.send_message(user, message, TOKEN)
         telegram_tools.delete_all_message(TOKEN, user, tools_sqlite.name_database)
 
 
@@ -315,23 +315,24 @@ def main(estatus='Iniciando'):
     print(f'Status: {estatus}')
     try:
         try:
-            payment_bot.polling(none_stop=True, timeout=20)
+            payment_bot.polling()
         except telebot.apihelper.ApiException:
             # telegram_tools.send_message()
             pass
         except KeyboardInterrupt:
-            payment_bot.stop_polling()
-            payment_bot.stop_bot()
-        finally:
             try:
+                payment_bot.stop_polling()
+                payment_bot.stop_bot()
                 aviso_de_mantenimiento()
             except Exception as details:
                 logger.error(f'Error al enviar el aviso: {details}')
             logger.info('Finish')
-    except (urllib3.exceptions.MaxRetryError, requests.exceptions.ReadTimeout):
+    except (urllib3.exceptions.MaxRetryError, requests.exceptions.ReadTimeout) as details:
+        aviso_de_mantenimiento(details)
         main('retinteno')
-    except requests.exceptions.ConnectionError:
+    except requests.exceptions.ConnectionError as details:
         time.sleep(20)
+        aviso_de_mantenimiento(details)
         main('retinteno por falta de internet')
 
 
