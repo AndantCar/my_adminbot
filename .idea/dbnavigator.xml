@@ -31,7 +31,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="00b29a92-2094-4557-a500-a8f61648760a">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[SELECT * FROM  messages_ids]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[SELECT * FROM  payments]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

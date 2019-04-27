@@ -2,10 +2,12 @@
 # -*- encoding:utf-8 -*-
 
 import os
+import time
 import logging
 import telebot
 import urllib3
 
+from DemonioNotificador import CheckStatus
 from datetime import datetime
 from copy import deepcopy
 
@@ -33,7 +35,7 @@ levels = {'1': logging.DEBUG,
 
 logger.info('inicializando todo lo necesario...')
 
-#TOKEN = '558805340:AAEHYOza2FtWwORvAtdJMzV41r7ZCyITUHM'
+# TOKEN = '558805340:AAEHYOza2FtWwORvAtdJMzV41r7ZCyITUHM'
 TOKEN = '635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg'
 
 # BOT
@@ -328,6 +330,9 @@ def main(estatus='Iniciando'):
             logger.info('Finish')
     except (urllib3.exceptions.MaxRetryError, requests.exceptions.ReadTimeout):
         main('retinteno')
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+        main('retinteno por falta de internet')
 
 
 if __name__ == '__main__':
@@ -339,5 +344,8 @@ if __name__ == '__main__':
         os.mkdir('database')
     if not os.path.exists(tools_sqlite.name_database):
         tools_sqlite.make_database_and_tables()
+    check_dates = CheckStatus('My_admin', TOKEN)
+    check_dates.start()
     main()
+    check_dates.end_task()
     print('Finalizo el proceso')

@@ -300,22 +300,66 @@ def update_status(conn, chat_id):
         cur.execute(sql, params)
 
 
+def get_name(conn, chat_id):
+    """
+
+    :param conn:
+    :param chat_id:
+    :return:
+    """
+    sql = '''SELECT name FROM users'''
+    cur = conn.cursor()
+    cur.execute(sql)
+    rows = cur.fetchall()
+    names = [chat_id[0] for chat_id in rows]
+    return names[0]
+
+
+def get_all_dates(conn):
+    """
+
+    :param conn:
+    :return:
+    """
+    sql = '''SELECT begin_date, chat_id, status_id, name FROM payments'''
+    cur = conn.cursor()
+    cur.execute(sql)
+    rows = cur.fetchall()
+    messages_ids = {}
+    print(rows)
+    for name in rows:
+        if not name[2]:
+            if not (name[1] in messages_ids):
+                messages_ids[name[0]] = []
+            messages_ids[name[0]].append((name[1], name[3]))
+    return messages_ids
+
+
 if __name__ == '__main__':
     name_database = os.path.join(os.getcwd(), 'base_payments.db')
     if not os.path.exists(name_database):
         print('1')
         make_database_and_tables()
     # main()
-    create_user(create_connection(name_database), ('carlos', '1234'))
+    # create_user(create_connection(name_database), ('carlos', '1234'))
     # save_message_id(create_connection(name_database), '123454321', '1234')
     # print(get_all_message_id(create_connection(name_database), '1234'))
-    create_payment(create_connection(name_database), 'renta', 1234)
+    # create_payment(create_connection(name_database), 'renta', 1234)
     # print(payments_list(create_connection(name_database), '1234'))
     # print(get_all_users(create_connection(name_database)))
     # print(get_user(create_connection(name_database), '1231'))
-    add_date_of_payment(create_connection(name_database), 1234, '15M')
-    update_status(create_connection(name_database), 1234)
-    print(get_status_payment(create_connection(name_database), 'renta', 1234))
+    # add_date_of_payment(create_connection(name_database), 1234, '15M')
+    # update_status(create_connection(name_database), 1234)
+    # print(get_status_payment(create_connection(name_database), 'renta', 1234))
+    fechas = get_all_dates(create_connection(name_database))
+    for fecha in fechas:
+        date_time_obj = datetime.strptime(fecha, '%Y-%m-%d')
+        hoy = datetime.today()
+        if date_time_obj.date() == hoy.date() or \
+                date_time_obj.date() == hoy.replace(day=hoy.day+1).date():
+            for user in fechas[fecha]:
+                print(f'{get_name(create_connection(name_database), user[0])} '
+                      f'No olvides realizar el pago de: {user[1]}')
 
 
 
