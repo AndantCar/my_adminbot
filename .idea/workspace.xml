@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30bb1229-d069-409e-a10e-3246eae35502" name="Default Changelist" comment="primer commit">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_admin_log2019-04-26.log" beforeDir="false" afterPath="$PROJECT_DIR$/My_admin_log2019-04-26.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/base_payments.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/complementos.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/complementos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/telegram_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/telegram_tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/tools_sqlite.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/tools_sqlite.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,16 +16,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="208" column="25" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
+            <state relative-caret-position="247">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#45#54#0" expanded="true" />
                 <element signature="e#8373#8642#0" />
                 <element signature="e#9591#10026#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -134,18 +141,7 @@
         <option value="$PROJECT_DIR$/tools/complementos.py" />
         <option value="$PROJECT_DIR$/tools/tools_sqlite.py" />
         <option value="$PROJECT_DIR$/my_bot.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/my_adminbot.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/dbnavigator.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -166,11 +162,6 @@
             <path>
               <item name="my_adminbot" type="b2602c69:ProjectViewProjectNode" />
               <item name="my_adminbot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_adminbot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_adminbot" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_adminbot" type="b2602c69:ProjectViewProjectNode" />
@@ -268,7 +259,7 @@
     <layout>
       <window_info id="DB Browser" weight="0.3296131" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.122023806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122023806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="DB Execution Console" weight="0.9516908" />
       <window_info anchor="bottom" id="Version Control" />
@@ -364,13 +355,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="208" column="25" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
+        <state relative-caret-position="247">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
             <element signature="e#8373#8642#0" />
             <element signature="e#9591#10026#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>

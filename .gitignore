@@ -1,0 +1,5 @@
+*.pyc
+database
+*bd
+/.idea
+*.log

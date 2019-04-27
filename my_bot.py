@@ -33,8 +33,8 @@ levels = {'1': logging.DEBUG,
 
 logger.info('inicializando todo lo necesario...')
 
-TOKEN = '558805340:AAEHYOza2FtWwORvAtdJMzV41r7ZCyITUHM'
-# TOKEN = '635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg'
+#TOKEN = '558805340:AAEHYOza2FtWwORvAtdJMzV41r7ZCyITUHM'
+TOKEN = '635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg'
 
 # BOT
 logger.info('Instanciando bot...')

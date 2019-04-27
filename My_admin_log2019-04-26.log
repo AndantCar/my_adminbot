@@ -7653,3 +7653,791 @@ Error: 400
 2019-04-26 22:22:29,431 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot558805340:AAEHYOza2FtWwORvAtdJMzV41r7ZCyITUHM/getUpdates?offset=461687296&timeout=20 HTTP/1.1" 200 23
 2019-04-26 22:22:49,621 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot558805340:AAEHYOza2FtWwORvAtdJMzV41r7ZCyITUHM/getUpdates?offset=461687296&timeout=20 HTTP/1.1" 200 23
 2019-04-26 22:23:09,817 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot558805340:AAEHYOza2FtWwORvAtdJMzV41r7ZCyITUHM/getUpdates?offset=461687296&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:30:21,599 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:30:22,356 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 2646
+2019-04-26 23:30:22,358 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:22,358 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:22,359 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:22,359 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:22,360 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:22,361 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:22,366 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:30:22,370 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:30:23,114 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&chat_id=519715736&message_id=701&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:23,114 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:23,115 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&chat_id=519715736&message_id=702&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:23,116 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:23,295 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=701&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:23,295 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:23,298 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=702&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:23,299 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:23,764 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 372
+2019-04-26 23:30:23,765 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 372
+2019-04-26 23:30:23,766 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:23,767 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:23,767 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:23,767 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:23,767 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:23,767 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:24,034 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&chat_id=519715736&message_id=704&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:24,035 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:24,035 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&chat_id=519715736&message_id=703&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:24,036 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:24,215 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=703&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:24,216 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:24,223 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=704&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:24,224 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:24,535 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 372
+2019-04-26 23:30:24,536 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:24,536 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:24,536 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:24,556 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 372
+2019-04-26 23:30:24,557 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:24,557 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:24,557 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:24,754 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&chat_id=519715736&message_id=706&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:24,754 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&chat_id=519715736&message_id=705&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:24,755 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:24,756 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:24,937 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=706&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:24,937 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:24,940 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=705&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:24,941 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:25,245 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 372
+2019-04-26 23:30:25,246 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:25,246 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:25,246 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:25,274 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 372
+2019-04-26 23:30:25,275 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:25,275 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:25,275 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:25,436 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&chat_id=519715736&message_id=707&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:25,437 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:25,458 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&chat_id=519715736&message_id=708&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:25,459 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:25,615 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=707&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:25,616 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:25,642 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=708&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:25,643 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:25,928 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 372
+2019-04-26 23:30:25,955 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=%3Cb%3EHola+Arely+Reyes+veo+que+eres+nuevo+usando+este+bot+quieres+empezar+a+usarme%3F%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Registrarse%22%2C+%22callback_data%22%3A+%22Registrarse%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 372
+2019-04-26 23:30:35,239 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554488&timeout=20 HTTP/1.1" 200 614
+2019-04-26 23:30:35,241 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:35,241 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:35,256 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:35,256 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:35,591 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=Tu+registro+fue+exitoso+%0A%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=716&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 361
+2019-04-26 23:30:38,599 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554489&timeout=20 HTTP/1.1" 200 414
+2019-04-26 23:30:38,599 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:38,600 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:38,600 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:38,798 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Carlos+A%C3%B1orve%3C%2Fb%3E&chat_id=547815968&message_id=717&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:38,799 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:38,979 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=547815968&message_id=717&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 400 82
+2019-04-26 23:30:38,980 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message can\'t be edited"}']
+2019-04-26 23:30:39,513 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=547815968&text=%3Cb%3EHola+Carlos+A%C3%B1orve%3C%2Fb%3E&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 350
+2019-04-26 23:30:39,597 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554490&timeout=20 HTTP/1.1" 200 607
+2019-04-26 23:30:39,598 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:39,598 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:39,918 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=716&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 361
+2019-04-26 23:30:41,807 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554491&timeout=20 HTTP/1.1" 200 601
+2019-04-26 23:30:41,808 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:41,808 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:42,134 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=Aun+no+hay+pagos+registrados&chat_id=519715736&message_id=716&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%3C%3CIr+a+inicio%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%5D%7D HTTP/1.1" 200 294
+2019-04-26 23:30:44,176 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554492&timeout=20 HTTP/1.1" 200 530
+2019-04-26 23:30:44,177 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:44,177 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:44,503 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=716&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:30:46,299 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554493&timeout=20 HTTP/1.1" 200 580
+2019-04-26 23:30:46,300 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:46,300 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:46,619 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=716&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:30:48,050 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554494&timeout=20 HTTP/1.1" 200 576
+2019-04-26 23:30:48,051 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:48,051 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:48,368 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EIngresa+el+nombre+del+pago.%3C%2Fb%3E&chat_id=519715736&message_id=716&parse_mode=HTML HTTP/1.1" 200 345
+2019-04-26 23:30:57,469 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554495&timeout=20 HTTP/1.1" 200 306
+2019-04-26 23:30:57,470 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:57,470 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:57,471 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:30:57,495 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:30:58,896 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=719 HTTP/1.1" 200 25
+2019-04-26 23:30:58,898 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:30:58,898 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:30:58,898 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:30:59,309 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=716&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:31:06,993 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554496&timeout=20 HTTP/1.1" 200 580
+2019-04-26 23:31:06,994 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:06,994 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:07,315 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=716&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:31:10,622 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554497&timeout=20 HTTP/1.1" 200 576
+2019-04-26 23:31:10,623 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:10,623 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:10,941 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EIngresa+el+nombre+del+pago.%3C%2Fb%3E&chat_id=519715736&message_id=716&parse_mode=HTML HTTP/1.1" 200 345
+2019-04-26 23:31:11,070 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554498&timeout=20 HTTP/1.1" 200 629
+2019-04-26 23:31:11,071 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:11,071 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:11,404 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=547815968&message_id=718&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 373
+2019-04-26 23:31:12,586 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554499&timeout=20 HTTP/1.1" 200 648
+2019-04-26 23:31:12,587 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:12,587 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:13,849 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EIngresa+el+nombre+del+pago.%3C%2Fb%3E&chat_id=547815968&message_id=718&parse_mode=HTML HTTP/1.1" 200 377
+2019-04-26 23:31:17,231 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554500&timeout=20 HTTP/1.1" 200 296
+2019-04-26 23:31:17,232 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:17,232 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:17,233 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:31:17,259 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:17,450 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554501&timeout=20 HTTP/1.1" 200 354
+2019-04-26 23:31:17,451 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:17,452 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:17,452 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:31:17,480 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:18,134 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=720 HTTP/1.1" 200 25
+2019-04-26 23:31:18,136 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:31:18,136 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:18,136 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:18,328 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=721 HTTP/1.1" 200 25
+2019-04-26 23:31:18,330 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:31:18,333 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:18,459 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=716&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:31:19,052 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=1252 HTTP/1.1" 400 86
+2019-04-26 23:31:19,054 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:31:19,056 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:19,784 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=1253 HTTP/1.1" 400 86
+2019-04-26 23:31:19,786 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:31:19,789 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:20,534 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=1254 HTTP/1.1" 400 86
+2019-04-26 23:31:20,536 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:31:20,537 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:21,295 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=1255 HTTP/1.1" 400 86
+2019-04-26 23:31:21,296 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:31:21,298 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:22,162 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=717 HTTP/1.1" 200 25
+2019-04-26 23:31:22,164 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:31:22,166 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:23,000 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=718 HTTP/1.1" 200 25
+2019-04-26 23:31:23,002 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:31:23,004 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:23,745 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=721 HTTP/1.1" 400 86
+2019-04-26 23:31:23,747 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:31:23,937 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=Porfavor+evita+hacer+spam&chat_id=547815968&message_id=721&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%3C%3CIr+a+inicio%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%5D%7D HTTP/1.1" 400 84
+2019-04-26 23:31:23,937 - 609 - Tools bot - Detalles: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message to edit not found"}']
+2019-04-26 23:31:24,124 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=547815968&message_id=721&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%3C%3CIr+a+inicio%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%5D%7D HTTP/1.1" 400 84
+2019-04-26 23:31:24,124 - 613 - root - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: message to edit not found"}']
+2019-04-26 23:31:24,432 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "POST /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=547815968&text=Porfavor+evita+hacer+spam&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%3C%3CIr+a+inicio%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 300
+2019-04-26 23:31:31,147 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554502&timeout=20 HTTP/1.1" 200 577
+2019-04-26 23:31:31,148 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:31,149 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:31,153 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:32,008 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=716 HTTP/1.1" 200 25
+2019-04-26 23:31:32,010 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:31:32,012 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:33,483 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=719 HTTP/1.1" 400 86
+2019-04-26 23:31:33,485 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:31:33,487 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:33,587 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554503&timeout=20 HTTP/1.1" 200 614
+2019-04-26 23:31:33,588 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:33,589 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:33,613 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:33,613 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:33,981 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=Tu+registro+fue+exitoso+%0A%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 361
+2019-04-26 23:31:34,278 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=720 HTTP/1.1" 400 86
+2019-04-26 23:31:34,280 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:31:35,943 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554504&timeout=20 HTTP/1.1" 200 607
+2019-04-26 23:31:35,944 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:35,945 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:36,279 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 361
+2019-04-26 23:31:42,436 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554505&timeout=20 HTTP/1.1" 200 603
+2019-04-26 23:31:42,437 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:42,438 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:42,755 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EIngresa+el+nombre+del+pago.%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML HTTP/1.1" 200 345
+2019-04-26 23:31:49,481 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554506&timeout=20 HTTP/1.1" 200 297
+2019-04-26 23:31:49,482 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:49,482 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:49,482 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:31:49,509 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:31:50,460 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=723 HTTP/1.1" 200 25
+2019-04-26 23:31:50,462 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:31:50,462 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:50,462 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:50,777 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:31:55,358 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554507&timeout=20 HTTP/1.1" 200 580
+2019-04-26 23:31:55,358 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:55,359 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:55,673 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:31:56,605 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554508&timeout=20 HTTP/1.1" 200 574
+2019-04-26 23:31:56,606 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:31:56,607 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:31:56,930 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Pelusita+morir%5Cu00e1%22%2C+%22callback_data%22%3A+%22Pelusita+morir%5Cu00e1%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+como%22%2C+%22callback_data%22%3A+%22Me+la+como%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+comes%22%2C+%22callback_data%22%3A+%22Me+la+comes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%3C%3C+Ir+a+inicio%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:32:02,295 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554509&timeout=20 HTTP/1.1" 200 585
+2019-04-26 23:32:02,296 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:02,296 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:02,621 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3ENombre%3A+Pelusita+morir%C3%A1%0AStatus%3A+Pendiente%0AFecha+limite%3A+No+definido%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Actualizar+fecha+de+pago%22%2C+%22callback_data%22%3A+%22add_payment_date%22%7D%2C+%7B%22text%22%3A+%22Marcar+como+pagado%22%2C+%22callback_data%22%3A+%22do_payment%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Eliminar+de+la+lista%22%2C+%22callback_data%22%3A+%22delete_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3C+Atras%22%2C+%22callback_data%22%3A+%22show_list%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_add_date%22%7D%5D%5D%7D HTTP/1.1" 200 392
+2019-04-26 23:32:10,018 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554510&timeout=20 HTTP/1.1" 200 639
+2019-04-26 23:32:10,019 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:10,019 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:10,365 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EAsigne+con+que+recurrencia+se+realizara+el+pago%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%3C%3C+Atras%22%2C+%22callback_data%22%3A+%22show_list%22%7D%5D%5D%7D HTTP/1.1" 200 365
+2019-04-26 23:32:17,182 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554511&timeout=20 HTTP/1.1" 200 605
+2019-04-26 23:32:17,182 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:17,183 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:17,524 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Pelusita+morir%5Cu00e1%22%2C+%22callback_data%22%3A+%22Pelusita+morir%5Cu00e1%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+como%22%2C+%22callback_data%22%3A+%22Me+la+como%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+comes%22%2C+%22callback_data%22%3A+%22Me+la+comes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%3C%3C+Ir+a+inicio%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%5D%5D%7D HTTP/1.1" 200 365
+2019-04-26 23:32:18,858 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554512&timeout=20 HTTP/1.1" 200 611
+2019-04-26 23:32:18,859 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:18,860 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:19,174 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 365
+2019-04-26 23:32:20,299 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554513&timeout=20 HTTP/1.1" 200 601
+2019-04-26 23:32:20,300 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:20,300 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:20,896 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:32:22,428 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554514&timeout=20 HTTP/1.1" 200 580
+2019-04-26 23:32:22,429 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:22,429 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:22,748 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:32:24,309 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554515&timeout=20 HTTP/1.1" 200 581
+2019-04-26 23:32:24,311 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:24,311 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:24,666 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EPara+asignar+un+nuevo+pago+basta+con+enviar+el+nombre+del+pago%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%3C%3CIr+a+inicio%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%5D%7D HTTP/1.1" 200 380
+2019-04-26 23:32:41,097 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554516&timeout=20 HTTP/1.1" 200 616
+2019-04-26 23:32:41,098 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:41,098 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:41,426 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:32:42,800 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554517&timeout=20 HTTP/1.1" 200 580
+2019-04-26 23:32:42,801 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:42,802 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:43,804 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:32:45,078 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554518&timeout=20 HTTP/1.1" 200 574
+2019-04-26 23:32:45,079 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:45,079 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:45,396 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Pelusita+morir%5Cu00e1%22%2C+%22callback_data%22%3A+%22Pelusita+morir%5Cu00e1%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+como%22%2C+%22callback_data%22%3A+%22Me+la+como%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+comes%22%2C+%22callback_data%22%3A+%22Me+la+comes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%3C%3C+Ir+a+inicio%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:32:47,028 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554519&timeout=20 HTTP/1.1" 200 585
+2019-04-26 23:32:47,029 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:47,029 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:47,371 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3ENombre%3A+Pelusita+morir%C3%A1%0AStatus%3A+Pendiente%0AFecha+limite%3A+No+definido%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Actualizar+fecha+de+pago%22%2C+%22callback_data%22%3A+%22add_payment_date%22%7D%2C+%7B%22text%22%3A+%22Marcar+como+pagado%22%2C+%22callback_data%22%3A+%22do_payment%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Eliminar+de+la+lista%22%2C+%22callback_data%22%3A+%22delete_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3C+Atras%22%2C+%22callback_data%22%3A+%22show_list%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_add_date%22%7D%5D%5D%7D HTTP/1.1" 200 392
+2019-04-26 23:32:53,735 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554520&timeout=20 HTTP/1.1" 200 639
+2019-04-26 23:32:53,736 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:32:53,736 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:32:54,081 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EAsigne+con+que+recurrencia+se+realizara+el+pago%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%3C%3C+Atras%22%2C+%22callback_data%22%3A+%22show_list%22%7D%5D%5D%7D HTTP/1.1" 200 365
+2019-04-26 23:33:13,924 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554521&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:33:34,128 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554521&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:33:54,319 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554521&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:34:14,506 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554521&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:34:34,692 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554521&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:34:52,739 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554521&timeout=20 HTTP/1.1" 200 288
+2019-04-26 23:34:52,740 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:34:52,741 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:34:52,741 - 156 - Tools bot - Error al intentar obtener el id del mensage
+2019-04-26 23:34:52,766 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:34:53,852 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=724 HTTP/1.1" 200 25
+2019-04-26 23:34:53,854 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:34:53,854 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:34:53,854 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:34:54,183 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:34:56,151 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554522&timeout=20 HTTP/1.1" 200 580
+2019-04-26 23:34:56,152 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:34:56,153 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:34:56,478 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:34:58,795 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554523&timeout=20 HTTP/1.1" 200 574
+2019-04-26 23:34:58,796 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:34:58,797 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:34:59,880 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Pelusita+morir%5Cu00e1%22%2C+%22callback_data%22%3A+%22Pelusita+morir%5Cu00e1%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+como%22%2C+%22callback_data%22%3A+%22Me+la+como%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+comes%22%2C+%22callback_data%22%3A+%22Me+la+comes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%3C%3C+Ir+a+inicio%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:35:00,201 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554524&timeout=20 HTTP/1.1" 200 585
+2019-04-26 23:35:00,202 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:35:00,202 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:35:00,531 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3ENombre%3A+Pelusita+morir%C3%A1%0AStatus%3A+Pendiente%0AFecha+limite%3A+2019-05-01%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Actualizar+fecha+de+pago%22%2C+%22callback_data%22%3A+%22add_payment_date%22%7D%2C+%7B%22text%22%3A+%22Marcar+como+pagado%22%2C+%22callback_data%22%3A+%22do_payment%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Eliminar+de+la+lista%22%2C+%22callback_data%22%3A+%22delete_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3C+Atras%22%2C+%22callback_data%22%3A+%22show_list%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_add_date%22%7D%5D%5D%7D HTTP/1.1" 200 391
+2019-04-26 23:35:10,254 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554525&timeout=20 HTTP/1.1" 200 632
+2019-04-26 23:35:10,255 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:35:10,256 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:35:10,598 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=Se+actualizo+el+estatus+del+pago+correctamente&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%3C%3C+Atras%22%2C+%22callback_data%22%3A+%22show_list%22%7D%5D%5D%7D HTTP/1.1" 200 312
+2019-04-26 23:35:14,162 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554526&timeout=20 HTTP/1.1" 200 552
+2019-04-26 23:35:14,164 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:35:14,164 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:35:14,497 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Pelusita+morir%5Cu00e1%22%2C+%22callback_data%22%3A+%22Pelusita+morir%5Cu00e1%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+como%22%2C+%22callback_data%22%3A+%22Me+la+como%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+comes%22%2C+%22callback_data%22%3A+%22Me+la+comes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%3C%3C+Ir+a+inicio%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%5D%5D%7D HTTP/1.1" 200 312
+2019-04-26 23:35:17,558 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554527&timeout=20 HTTP/1.1" 200 563
+2019-04-26 23:35:17,559 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:35:17,560 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:35:17,919 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3ENombre%3A+Pelusita+morir%C3%A1%0AStatus%3A+Pagado%0AFecha+limite%3A+2019-05-01%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Actualizar+fecha+de+pago%22%2C+%22callback_data%22%3A+%22add_payment_date%22%7D%2C+%7B%22text%22%3A+%22Marcar+como+pagado%22%2C+%22callback_data%22%3A+%22do_payment%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Eliminar+de+la+lista%22%2C+%22callback_data%22%3A+%22delete_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3C+Atras%22%2C+%22callback_data%22%3A+%22show_list%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_add_date%22%7D%5D%5D%7D HTTP/1.1" 200 388
+2019-04-26 23:35:28,560 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554528&timeout=20 HTTP/1.1" 200 628
+2019-04-26 23:35:28,561 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:35:28,562 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:35:28,882 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Pelusita+morir%5Cu00e1%22%2C+%22callback_data%22%3A+%22Pelusita+morir%5Cu00e1%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+como%22%2C+%22callback_data%22%3A+%22Me+la+como%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+comes%22%2C+%22callback_data%22%3A+%22Me+la+comes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%3C%3C+Ir+a+inicio%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%5D%5D%7D HTTP/1.1" 200 388
+2019-04-26 23:35:48,740 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554529&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:35:49,677 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554529&timeout=20 HTTP/1.1" 200 634
+2019-04-26 23:35:49,678 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:35:49,678 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:35:50,010 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 388
+2019-04-26 23:35:57,093 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554530&timeout=20 HTTP/1.1" 200 628
+2019-04-26 23:35:57,095 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:35:57,095 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:35:57,488 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Pelusita+morir%5Cu00e1%22%2C+%22callback_data%22%3A+%22Pelusita+morir%5Cu00e1%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+como%22%2C+%22callback_data%22%3A+%22Me+la+como%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Me+la+comes%22%2C+%22callback_data%22%3A+%22Me+la+comes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%3C%3C+Ir+a+inicio%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%5D%5D%7D HTTP/1.1" 200 388
+2019-04-26 23:35:59,180 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554531&timeout=20 HTTP/1.1" 200 634
+2019-04-26 23:35:59,181 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:35:59,181 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:35:59,557 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=519715736&message_id=715&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Mostrar+lista%22%2C+%22callback_data%22%3A+%22show_list%22%7D%2C+%7B%22text%22%3A+%22A%5Cu00f1adir+un+pago%22%2C+%22callback_data%22%3A+%22new_payment%22%7D%2C+%7B%22text%22%3A+%22%3C%3CAtras%22%2C+%22callback_data%22%3A+%22start%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Ayuda%22%2C+%22callback_data%22%3A+%22help_new_payment%22%7D%5D%5D%7D HTTP/1.1" 200 388
+2019-04-26 23:36:00,679 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554532&timeout=20 HTTP/1.1" 200 624
+2019-04-26 23:36:00,681 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:36:00,681 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:36:01,003 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageText?text=%3Cb%3EHola+Arely+Reyes%3C%2Fb%3E&chat_id=519715736&message_id=715&parse_mode=HTML&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 334
+2019-04-26 23:36:03,169 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554533&timeout=20 HTTP/1.1" 200 577
+2019-04-26 23:36:03,170 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-26 23:36:03,170 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-26 23:36:03,176 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:36:04,047 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=715 HTTP/1.1" 200 25
+2019-04-26 23:36:04,048 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-26 23:36:04,050 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:36:04,753 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=723 HTTP/1.1" 400 86
+2019-04-26 23:36:04,756 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:36:04,758 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-26 23:36:05,664 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=519715736&message_id=724 HTTP/1.1" 400 86
+2019-04-26 23:36:05,666 - 534 - Tools bot - Algun error ocurrio en la solicitud.
+Error: 400
+2019-04-26 23:36:23,348 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:36:43,531 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:37:03,712 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:37:23,897 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:37:44,130 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:38:05,143 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:38:25,570 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:38:45,751 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:39:05,933 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:39:26,119 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:39:46,297 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:40:06,479 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:40:26,659 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:40:47,248 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:41:07,444 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:41:27,623 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:41:47,802 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:42:07,982 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:42:28,162 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:42:48,342 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:43:08,522 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:43:28,720 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:43:48,897 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:44:09,075 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:44:29,256 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:44:49,434 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:45:09,612 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:45:29,790 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:45:49,971 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:46:10,155 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:46:30,332 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:46:50,510 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:47:10,692 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:47:30,889 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:47:51,069 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:48:11,558 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:48:31,766 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:48:51,947 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:49:12,127 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:49:32,315 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:49:52,509 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:50:12,833 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:50:33,297 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:50:53,473 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:51:13,657 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:51:33,840 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:51:54,017 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:51:54,019 - 240 - urllib3.connectionpool - Resetting dropped connection: api.telegram.org
+2019-04-26 23:52:14,768 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:52:34,956 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:52:55,140 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:53:15,336 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:53:35,543 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:53:55,783 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:54:16,072 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:54:36,256 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:54:56,440 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:55:16,625 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:55:36,911 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:55:57,102 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:56:17,825 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:56:38,275 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:56:58,458 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:57:18,649 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:57:38,832 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:57:59,023 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:58:19,215 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:58:39,400 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:58:59,652 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:59:19,840 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-26 23:59:40,022 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:00:00,229 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:00:20,418 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:00:40,603 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:01:03,189 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:01:23,375 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:01:44,005 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:02:04,258 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:02:24,444 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:02:44,638 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:03:04,832 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:03:25,025 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:03:45,215 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:04:05,417 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:04:25,631 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:04:45,820 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:05:06,459 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:05:26,764 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:05:46,972 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:06:07,178 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:06:27,364 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:06:47,548 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:07:07,735 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:07:27,921 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:07:48,224 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:08:08,408 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:08:28,618 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:08:48,802 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:09:08,999 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:09:29,182 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:09:49,364 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:10:09,546 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:10:29,727 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:10:49,909 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:11:10,091 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:11:30,275 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:11:50,458 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:12:10,642 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:12:30,831 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:12:51,021 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:13:11,207 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:13:31,390 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:13:51,573 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:14:11,759 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:14:31,944 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:14:52,127 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:15:12,761 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:15:32,945 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:15:53,129 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:16:13,324 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:16:33,630 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:16:53,824 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:17:14,006 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:17:34,191 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:17:54,379 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:18:14,564 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:18:34,751 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:18:54,938 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:19:15,121 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:19:35,321 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:19:55,510 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:20:15,709 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:20:35,960 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:20:56,149 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:21:16,337 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:21:36,554 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:21:56,741 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:22:16,923 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:22:37,111 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:22:57,319 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:23:17,509 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:23:37,691 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:23:57,875 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:24:18,079 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:24:38,263 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:24:58,468 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:25:18,654 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:25:38,838 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:25:38,841 - 240 - urllib3.connectionpool - Resetting dropped connection: api.telegram.org
+2019-04-27 00:25:59,598 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:26:19,780 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:26:39,959 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:27:00,135 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:27:20,322 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:27:40,500 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:28:00,678 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:28:20,855 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:28:41,035 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:29:01,213 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:29:21,392 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:29:41,570 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:30:01,750 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:30:21,939 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:30:42,117 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:31:02,338 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:31:22,535 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:31:42,712 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:32:02,896 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:32:23,084 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:32:43,260 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:33:03,440 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:33:23,618 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:33:43,796 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:34:03,980 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:34:24,158 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:34:44,338 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:35:04,527 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:35:24,705 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:35:44,885 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:36:05,064 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:36:25,242 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:36:45,421 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:37:05,602 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:37:25,780 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:37:45,976 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:38:06,152 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:38:26,333 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:38:46,510 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:39:06,701 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:39:26,880 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:39:47,060 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:40:07,238 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:40:27,422 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:40:47,603 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:41:07,782 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:41:27,969 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:41:48,158 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:42:08,353 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:42:28,531 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:42:48,710 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:43:08,887 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:43:29,070 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:43:49,379 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:44:09,558 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:44:29,736 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:44:49,923 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:45:10,100 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:45:30,279 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:45:50,465 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:46:11,137 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:46:31,323 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:46:51,508 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:47:11,687 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:47:31,869 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:47:52,051 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:48:12,230 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:48:32,410 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:48:52,586 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:49:12,764 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:49:32,940 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:49:53,119 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:50:13,296 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:50:33,475 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:50:53,653 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:51:13,831 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:51:34,027 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:51:54,293 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:52:14,481 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:52:34,664 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:52:54,850 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:53:15,028 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:53:35,208 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:53:55,387 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:54:15,632 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:54:35,820 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:54:55,999 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:55:16,179 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:55:36,377 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:55:56,555 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:56:16,735 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:56:36,913 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:56:57,091 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:57:17,271 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:57:37,449 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:57:57,629 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:58:17,808 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:58:37,986 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:58:58,165 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:59:18,342 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:59:18,344 - 240 - urllib3.connectionpool - Resetting dropped connection: api.telegram.org
+2019-04-27 00:59:39,094 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 00:59:59,287 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:00:19,473 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:00:39,661 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:00:59,844 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:01:20,026 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:01:40,210 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:02:00,402 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:02:20,589 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:02:40,774 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:03:00,958 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:03:21,140 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:03:41,322 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:04:01,504 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:04:21,707 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:04:41,891 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:05:02,081 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:05:22,287 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:05:42,488 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:06:02,669 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:06:22,851 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:06:43,035 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:07:03,225 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:07:23,407 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:07:43,662 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:08:03,844 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:08:24,027 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:08:44,209 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:09:04,391 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:09:24,585 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:09:44,769 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:10:04,951 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:10:25,133 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:10:45,315 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:11:05,498 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:11:26,024 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:11:46,207 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:12:06,394 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:12:26,576 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:12:46,762 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:13:06,945 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:13:27,126 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:13:47,311 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:14:07,495 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:14:27,678 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:14:47,859 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:15:08,041 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:15:28,225 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:15:48,410 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:16:08,591 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:16:28,887 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:16:49,072 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:17:09,272 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:17:29,462 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:17:49,644 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:18:09,826 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:18:30,008 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:18:50,189 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:19:10,372 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:19:30,554 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:19:50,736 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:20:10,928 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:20:31,111 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:20:51,297 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:21:11,479 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:21:31,671 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:21:51,852 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:22:12,036 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:22:32,227 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:22:52,412 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:23:12,595 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:23:17,336 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554534&timeout=20 HTTP/1.1" 200 569
+2019-04-27 01:23:17,337 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-27 01:23:17,338 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-27 01:23:36,605 - 609 - Tools bot - Detalles: ('Connection aborted.', OSError("(10054, 'WSAECONNRESET')"))
+2019-04-27 01:23:36,607 - 813 - urllib3.connectionpool - Starting new HTTPS connection (2): api.telegram.org:443
+2019-04-27 01:23:37,504 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/editMessageReplyMarkup?chat_id=547815968&message_id=722&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Lista+De+Gastos%22%2C+%22callback_data%22%3A+%22Lista+De+Gastos%22%7D%2C+%7B%22text%22%3A+%22Limpiar+chat%22%2C+%22callback_data%22%3A+%22Limpiar+chat%22%7D%5D%5D%7D HTTP/1.1" 200 323
+2019-04-27 01:23:37,521 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554535&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:23:56,639 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554535&timeout=20 HTTP/1.1" 200 602
+2019-04-27 01:23:56,640 - 147 - Tools bot - Intentando obtener el id del chat.
+2019-04-27 01:23:56,640 - 153 - Tools bot - Intentando obtener el id del mensage
+2019-04-27 01:24:16,038 - 65 - TeleBot - ConnectionError occurred, args=(ProtocolError('Connection aborted.', OSError("(10054, 'WSAECONNRESET')")),)
+Traceback (most recent call last):
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 309, in recv_into
+    return self.recv_into(*args, **kwargs)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 299, in recv_into
+    raise SocketError(str(e))
+OSError: (10054, 'WSAECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 309, in recv_into
+    return self.recv_into(*args, **kwargs)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\contrib\pyopenssl.py", line 299, in recv_into
+    raise SocketError(str(e))
+urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError("(10054, 'WSAECONNRESET')"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/Osomatli/PycharmProjects/my_adminbot/my_bot.py", line 95, in lista_de_pagos
+    telegram_tools.send_only_markup(payment_bot, chat_id, message_id, MARKUP_PAYMENT_CONFIGURATION)
+  File "C:\Users\Osomatli\PycharmProjects\my_adminbot\tools\telegram_tools.py", line 620, in send_only_markup
+    bot.edit_message_reply_markup(chat_id, message_id, reply_markup=markup)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\telebot\__init__.py", line 1008, in edit_message_reply_markup
+    result = apihelper.edit_message_reply_markup(self.token, chat_id, message_id, inline_message_id, reply_markup)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\telebot\apihelper.py", line 667, in edit_message_reply_markup
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\telebot\apihelper.py", line 54, in _make_request
+    timeout=(connect_timeout, read_timeout), proxies=proxy)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Osomatli\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError("(10054, 'WSAECONNRESET')"))
+
+2019-04-27 01:24:16,043 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-27 01:24:16,821 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/getUpdates?offset=26554536&timeout=20 HTTP/1.1" 200 23
+2019-04-27 01:24:16,903 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=547815968&text=El+bot+entrara+en+mantenimiento.&parse_mode=HTML HTTP/1.1" 200 307
+2019-04-27 01:24:16,905 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-27 01:24:16,908 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-27 01:24:17,810 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/deleteMessage?chat_id=547815968&message_id=722 HTTP/1.1" 200 25
+2019-04-27 01:24:17,811 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-27 01:24:17,813 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-27 01:24:19,301 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=El+bot+entrara+en+mantenimiento.&parse_mode=HTML HTTP/1.1" 200 275
+2019-04-27 01:24:19,303 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-27 01:24:19,306 - 813 - urllib3.connectionpool - Starting new HTTPS connection (1): api.telegram.org:443
+2019-04-27 01:24:20,184 - 393 - urllib3.connectionpool - https://api.telegram.org:443 "GET /bot635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg/sendMessage?chat_id=519715736&text=El+bot+entrara+en+mantenimiento.&parse_mode=HTML HTTP/1.1" 200 275
+2019-04-27 01:24:20,186 - 530 - Tools bot - La solisutd se ejecuto correctamente.
+2019-04-27 01:24:20,188 - 328 - BinanceBot - Finish
