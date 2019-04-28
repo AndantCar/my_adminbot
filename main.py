@@ -69,16 +69,19 @@ def main(estatus='Iniciando'):
 
 
 if __name__ == '__main__':
-    print('Inicializando el bot')
-    logging.basicConfig(level=levels[level_log],
-                        format='%(asctime)s - %(lineno)d - %(name)s - %(message)s',
-                        filename=f'My_admin_log{datetime.today().date()}.log')
-    if not os.path.exists('database'):
-        os.mkdir('database')
-    if not os.path.exists(tools_sqlite.name_database):
-        tools_sqlite.make_database_and_tables()
-    check_dates = CheckStatus('My_admin', TOKEN)
-    check_dates.start()
-    main()
-    check_dates.end_task()
-    print('Finalizo el proceso')
+    try:
+        print('Inicializando el bot')
+        logging.basicConfig(level=levels[level_log],
+                            format='%(asctime)s - %(lineno)d - %(name)s - %(message)s',
+                            filename=f'My_admin_log{datetime.today().date()}.log')
+        if not os.path.exists('database'):
+            os.mkdir('database')
+        if not os.path.exists(tools_sqlite.name_database):
+            tools_sqlite.make_database_and_tables()
+        check_dates = CheckStatus('My_admin', TOKEN)
+        check_dates.start()
+        main()
+        check_dates.end_task()
+        print('Finalizo el proceso')
+    except Exception:
+        print('Me rompi aqui')

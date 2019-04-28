@@ -304,3 +304,7 @@ def aviso_de_mantenimiento(message='El bot entrara en mantenimiento.'):
     for user in users:
         telegram_tools.send_message(user, message, TOKEN)
         telegram_tools.delete_all_message(TOKEN, user, tools_sqlite.name_database)
+
+
+if __name__ == '__main__':
+    print('Ejecutando como main')
