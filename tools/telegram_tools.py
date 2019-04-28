@@ -448,6 +448,20 @@ def delete_message(token, chat_id, message_id):
             pass
 
 
+def delete_message_from_bot(bot, chat_id, message_id):
+    """
+    Args:
+        bot(telebot.TeleBot):
+        chat_id(int):
+        message_id(int):
+    :return:
+    """
+    try:
+        bot.delete_message(chat_id, message_id)
+    except Exception as details:
+        logger.warning(f'Error al eliminar el mensaje con id {message_id}\n'
+                       f'Detalles: {details}')
+
 def delete_all_message(token, chat_id, name_database):
     """
 

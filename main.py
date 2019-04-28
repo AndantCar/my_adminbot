@@ -48,21 +48,19 @@ def main(estatus='Iniciando'):
     try:
         my_bot.payment_bot.polling()
     except telebot.apihelper.ApiException:
-        my_bot.payment_bot.stop_polling()
         my_bot.payment_bot.stop_bot()
         my_bot.aviso_de_mantenimiento('Error en la api del bot')
     except KeyboardInterrupt:
-        my_bot.payment_bot.stop_polling()
         my_bot.payment_bot.stop_bot()
         my_bot.aviso_de_mantenimiento()
         logger.info('Finish')
     except (urllib3.exceptions.MaxRetryError, requests.exceptions.ReadTimeout) as details:
-        my_bot.payment_bot.stop_polling()
         my_bot.payment_bot.stop_bot()
         my_bot.aviso_de_mantenimiento(details)
         main('retinteno')
-    except requests.exceptions.ConnectionError as details:
-        my_bot.payment_bot.stop_polling()
+    except (requests.exceptions.ConnectionError,
+            OSError,
+            urllib3.exceptions.ProtocolError) as details:
         my_bot.payment_bot.stop_bot()
         my_bot.payment_bot = telebot.TeleBot(my_bot.TOKEN)
         time.sleep(20)
