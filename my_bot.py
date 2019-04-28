@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 # -*- encoding:utf-8 -*-
 
-import os
-import time
+# import os
+# import time
 import logging
 import telebot
 import urllib3
 
-from DemonioNotificador import CheckStatus
-from datetime import datetime
+# from DemonioNotificador import CheckStatus
+# from datetime import datetime
 from copy import deepcopy
 
-import requests
-from tools import telegram_tools
+# import requests
+# from tools import telegram_tools
 from tools import tools_sqlite
 from tools.complementos import *
 
@@ -304,50 +304,3 @@ def aviso_de_mantenimiento(message='El bot entrara en mantenimiento.'):
     for user in users:
         telegram_tools.send_message(user, message, TOKEN)
         telegram_tools.delete_all_message(TOKEN, user, tools_sqlite.name_database)
-
-
-def main(estatus='Iniciando'):
-    """
-
-    :param estatus:
-    :return:
-    """
-    print(f'Status: {estatus}')
-    try:
-        payment_bot.polling()
-    except telebot.apihelper.ApiException:
-        payment_bot.stop_polling()
-        payment_bot.stop_bot()
-        aviso_de_mantenimiento('Error en la api del bot')
-    except KeyboardInterrupt:
-        payment_bot.stop_polling()
-        payment_bot.stop_bot()
-        aviso_de_mantenimiento()
-        logger.info('Finish')
-    except (urllib3.exceptions.MaxRetryError, requests.exceptions.ReadTimeout) as details:
-        payment_bot.stop_polling()
-        payment_bot.stop_bot()
-        aviso_de_mantenimiento(details)
-        main('retinteno')
-    except requests.exceptions.ConnectionError as details:
-        payment_bot.stop_polling()
-        payment_bot.stop_bot()
-        time.sleep(20)
-        aviso_de_mantenimiento(str(details))
-        main('retinteno por falta de internet')
-
-
-if __name__ == '__main__':
-    print('Inicializando el bot')
-    logging.basicConfig(level=levels[level_log],
-                        format='%(asctime)s - %(lineno)d - %(name)s - %(message)s',
-                        filename=f'My_admin_log{datetime.today().date()}.log')
-    if not os.path.exists('database'):
-        os.mkdir('database')
-    if not os.path.exists(tools_sqlite.name_database):
-        tools_sqlite.make_database_and_tables()
-    check_dates = CheckStatus('My_admin', TOKEN)
-    check_dates.start()
-    main()
-    check_dates.end_task()
-    print('Finalizo el proceso')
