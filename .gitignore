@@ -4,3 +4,6 @@ database
 .idea
 *.log
 .idea/*
+*.xml
+*.iml
+.idea
