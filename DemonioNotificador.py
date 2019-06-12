@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 from threading import Thread
 
-from tools.telegram_tools import send_message
+from my_request.telegram_tools import send_message
 from tools.tools_sqlite import name_database, get_all_dates, create_connection, get_name
 
 

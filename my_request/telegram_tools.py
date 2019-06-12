@@ -12,7 +12,7 @@ from copy import deepcopy
 import requests
 
 from telebot import types
-from .tools_sqlite import save_message_id, create_connection, get_all_message_id, delete_all_message_id_db
+from tools.tools_sqlite import save_message_id, create_connection, get_all_message_id, delete_all_message_id_db
 
 
 __author__ = 'Carlos Añorve'
@@ -153,18 +153,12 @@ def get_chat_id_and_message_id(message, save_in_database=False, name_database=''
         logger.debug('Intentando obtener el id del mensage')
         message_id = message.message.message_id
     except AttributeError:
-        logger.error('Error al intentar obtener el id del mensage')
+        logger.warning('Error al intentar obtener el id del mensage')
         try:
             message_id = message.message_id
         except AttributeError:
             logger.error('Error al intentar pasar a int el id del mensaje.')
             return None
-    # fecha = datetime.datetime.fromtimestamp(get_date_from_message(message))
-    # retraso = datetime.datetime.today() - fecha
-    # if int(retraso.total_seconds()) > 40:
-    #     print(f'se reciobio un mensaje demaciado retrasado.retraso de {retraso} segundos\n'
-    #           f'Hora de recepcion: {fecha}')
-    #     return None
     if save_in_database:
         if not (message_id in get_all_message_id(create_connection(name_database), chat_id)):
             save_message_id(create_connection(name_database), message_id, chat_id)

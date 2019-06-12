@@ -5,7 +5,6 @@
 # import time
 import logging
 import telebot
-import urllib3
 
 # from DemonioNotificador import CheckStatus
 # from datetime import datetime
@@ -63,7 +62,7 @@ def start(message, message_extra: str = ''):
         else:
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  MESSAGE_NEW_USER.format(telegram_tools.get_name(message)),
-                                                 MARKUP_REGUSTRO)
+                                                 MARKUP_REGISTRO)
 
 
 @payment_bot.callback_query_handler(func=lambda message: message.data == 'start')
@@ -83,7 +82,7 @@ def callback_start(message):
         else:
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  MESSAGE_NEW_USER.format(telegram_tools.get_name(message)),
-                                                 MARKUP_REGUSTRO)
+                                                 MARKUP_REGISTRO)
 
 
 @payment_bot.callback_query_handler(func=lambda message: message.data == 'Lista De Gastos')
@@ -127,7 +126,7 @@ def show_list(message):
             payments_markup = telegram_tools.make_button_of_list(names_payments, 1, add_back_button=True,
                                                                  name_comand_back='Lista De Gastos')
             telegram_tools.send_only_markup(payment_bot, chat_id, message_id, payments_markup)
-            BOT_DICT_FLAGS[chat_id] = FLAG_PAYMEENTS_LIST
+            BOT_DICT_FLAGS[chat_id] = FLAG_PAYMENTS_LIST
         else:
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, 'Aun no hay pagos registrados',
                                                  MARKUP_HOME)
@@ -279,7 +278,7 @@ def callback_generic(message):
     except TypeError:
         logger.warning('Error al obtener el chat_id')
     else:
-        if BOT_DICT_FLAGS[chat_id] == FLAG_PAYMEENTS_LIST:
+        if BOT_DICT_FLAGS[chat_id] == FLAG_PAYMENTS_LIST:
             datos = tools_sqlite.get_status_payment(tools_sqlite.create_connection(tools_sqlite.name_database),
                                                     message.data, chat_id)
             try:

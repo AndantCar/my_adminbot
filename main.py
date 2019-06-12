@@ -51,21 +51,16 @@ def main(estatus='Iniciando'):
         my_bot.payment_bot.stop_bot()
         my_bot.aviso_de_mantenimiento('Error en la api del bot')
     except KeyboardInterrupt:
-        my_bot.payment_bot.stop_bot()
         my_bot.aviso_de_mantenimiento()
         logger.info('Finish')
-    except (urllib3.exceptions.MaxRetryError, requests.exceptions.ReadTimeout) as details:
+    except (urllib3.exceptions.MaxRetryError, urllib3.exceptions.ProtocolError) as details:
+        print(f'Errror 1: {details}')
+    except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout) as details:
+        print(f'Errror 2: {details}')
+    except OSError as details:
+        print(f'Errror 3: {details}')
+    finally:
         my_bot.payment_bot.stop_bot()
-        my_bot.aviso_de_mantenimiento(details)
-        main('retinteno')
-    except (requests.exceptions.ConnectionError,
-            OSError,
-            urllib3.exceptions.ProtocolError) as details:
-        my_bot.payment_bot.stop_bot()
-        my_bot.payment_bot = telebot.TeleBot(my_bot.TOKEN)
-        time.sleep(20)
-        my_bot.aviso_de_mantenimiento(str(details))
-        main('retinteno por falta de internet')
 
 
 if __name__ == '__main__':
