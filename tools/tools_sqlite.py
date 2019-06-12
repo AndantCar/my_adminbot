@@ -9,6 +9,7 @@ from datetime import datetime
 
 
 name_database = os.path.join(os.getcwd(), os.path.join('database', 'base_payments.db'))
+print(name_database)
 
 
 def create_connection(db_file):
@@ -350,15 +351,15 @@ if __name__ == '__main__':
     # add_date_of_payment(create_connection(name_database), 1234, '15M')
     # update_status(create_connection(name_database), 1234)
     # print(get_status_payment(create_connection(name_database), 'renta', 1234))
-    fechas = get_all_dates(create_connection(name_database))
-    for fecha in fechas:
-        date_time_obj = datetime.strptime(fecha, '%Y-%m-%d')
-        hoy = datetime.today()
-        if date_time_obj.date() == hoy.date() or \
-                date_time_obj.date() == hoy.replace(day=hoy.day+1).date():
-            for user in fechas[fecha]:
-                print(f'{get_name(create_connection(name_database), user[0])} '
-                      f'No olvides realizar el pago de: {user[1]}')
+    # fechas = get_all_dates(create_connection(name_database))
+    # for fecha in fechas:
+    #     date_time_obj = datetime.strptime(fecha, '%Y-%m-%d')
+    #     hoy = datetime.today()
+    #     if date_time_obj.date() == hoy.date() or \
+    #             date_time_obj.date() == hoy.replace(day=hoy.day+1).date():
+    #         for user in fechas[fecha]:
+    #             print(f'{get_name(create_connection(name_database), user[0])} '
+    #                   f'No olvides realizar el pago de: {user[1]}')
 
 
 

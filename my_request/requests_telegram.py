@@ -16,7 +16,7 @@ from my_request import telegram_types
 
 logger = logging.getLogger('my_requests')
 
-token_bot = os.getenv('token')
+# token_bot = os.getenv('token')
 base_url = 'https://api.telegram.org/bot{}/{}'
 
 
@@ -203,6 +203,14 @@ class TelegramBot:
 
         return decorator
 
+    def callback_query_handler(self, command=None, func=None):
+        def decorator(handler):
+            handler_dict = self.__build_handler_dict(handler, func=func)
+            self.__add_new_command(command, handler_dict, 'query')
+            return handler
+
+        return decorator
+
     @staticmethod
     def __build_handler_dict(handler, **filters):
         return {
@@ -340,15 +348,3 @@ class MethodRequestError(Exception):
     def __init__(self, message):
         super(Exception, self).__init__(message)
 
-
-my_bot = TelegramBot(token_bot, 'tester')
-
-
-@my_bot.message_handler('*')
-def z(message):
-    chat_id, message_id = telegram_tools.get_chat_id_and_message_id(message)
-    message_id = telegram_tools.get_chat_id_and_message_id(my_bot.send_message(chat_id, message.text))[1]
-    my_bot.edit_message_text('hola_2', chat_id, message_id)
-
-
-my_bot.start()

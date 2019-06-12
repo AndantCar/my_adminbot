@@ -5,6 +5,7 @@
 # import time
 import logging
 import telebot
+from my_request.requests_telegram import TelegramBot
 
 # from DemonioNotificador import CheckStatus
 # from datetime import datetime
@@ -39,13 +40,13 @@ TOKEN = '635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg'
 
 # BOT
 logger.info('Instanciando bot...')
-payment_bot = telebot.TeleBot(TOKEN)
+payment_bot = TelegramBot(TOKEN, 'tester')# telebot.TeleBot(TOKEN)
 
 logger.info('Todo listo para trabajar n.n!.')
 ACTIVE_CHAT = []
 
 
-@payment_bot.message_handler(commands=['start'])
+@payment_bot.message_handler(command='start')
 def start(message, message_extra: str = ''):
     print('start')
     try:
@@ -225,7 +226,7 @@ def do_payment(message):
                                              MARKUP_GO_LIST_PAYMENTS)
 
 
-@payment_bot.message_handler(func=lambda message: True, content_types=['text'])
+@payment_bot.message_handler(command='*')
 def texto_libre(message):
     print('texto libre')
     global BOT_DICT_FLAGS, NAME_PAYMENT
@@ -306,4 +307,5 @@ def aviso_de_mantenimiento(message='El bot entrara en mantenimiento.'):
 
 
 if __name__ == '__main__':
-    print('Ejecutando como main')
+    print('iniciando')
+    payment_bot.start()

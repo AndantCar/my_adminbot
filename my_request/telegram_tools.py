@@ -598,7 +598,7 @@ def send_message_from_bot(bot, chat_id, message_id, message, markup=None, parse_
     Envia in mensage usando una instancia de un bot de telegram.
 
     Args:
-        bot(telebot.TeleBot): Instancia de un bot de telegram.
+        bot: Instancia de un bot de telegram.
         chat_id(int): Identificador del chat al caul se le enviara el mensaje
         message_id(int): identificador del mensaje anterior de ser posible se sobreescribira.
         message(str): Mensaje que se enviara.
