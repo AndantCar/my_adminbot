@@ -469,6 +469,7 @@ class Message(JsonDeserializable):
                 _subs[type] = self.custom_subs[type]
         utf16_text = text.encode("utf-16-le")
         html_text = ""
+
         def func(text, type=None, url=None, user=None):
             text = text.decode("utf-16-le")
             if type == "text_mention":
@@ -485,9 +486,10 @@ class Message(JsonDeserializable):
         offset = 0
         for entity in entities:
             if entity.offset > offset:
-                html_text += func(utf16_text[offset * 2 : entity.offset * 2])
+                html_text += func(utf16_text[offset * 2: entity.offset * 2])
                 offset = entity.offset
-            html_text += func(utf16_text[offset * 2 : (offset + entity.length) * 2], entity.type, entity.url, entity.user)
+            html_text += func(utf16_text[offset * 2: (offset + entity.length) * 2], entity.type, entity.url,
+                              entity.user)
             offset += entity.length
         if offset * 2 < len(utf16_text):
             html_text += func(utf16_text[offset * 2:])
@@ -500,6 +502,7 @@ class Message(JsonDeserializable):
     @property
     def html_caption(self):
         return self.__html_text(self.caption, self.caption_entities)
+
 
 class MessageEntity(JsonDeserializable):
     @classmethod

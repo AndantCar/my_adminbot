@@ -12,10 +12,9 @@ from my_request.requests_telegram import TelegramBot
 from copy import deepcopy
 
 # import requests
-# from tools import telegram_tools
+from my_request import telegram_tools
 from tools import tools_sqlite
 from tools.complementos import *
-
 logger = logging.getLogger('BinanceBot')
 
 __author__ = 'Carlos Añorve'
@@ -40,13 +39,14 @@ TOKEN = '635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg'
 
 # BOT
 logger.info('Instanciando bot...')
-payment_bot = TelegramBot(TOKEN, 'tester')# telebot.TeleBot(TOKEN)
+payment_bot = TelegramBot(TOKEN, 'tester')
+# payment_bot = telebot.TeleBot(TOKEN)
 
 logger.info('Todo listo para trabajar n.n!.')
 ACTIVE_CHAT = []
 
 
-@payment_bot.message_handler(command='start')
+@payment_bot.message_handler(command='/start')
 def start(message, message_extra: str = ''):
     print('start')
     try:
@@ -56,17 +56,19 @@ def start(message, message_extra: str = ''):
     else:
         if tools_sqlite.user_exist(tools_sqlite.create_connection(tools_sqlite.name_database),
                                    chat_id):
+            logger.info('Entre a el if de /staet')
             message_to_send = message_extra + MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  message_to_send,
                                                  MARKUP_LISTA_DE_PAGOS)
         else:
+            logger.info('Entre al else de /staet')
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  MESSAGE_NEW_USER.format(telegram_tools.get_name(message)),
                                                  MARKUP_REGISTRO)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'start')
+@payment_bot.callback_query_handler('start')
 def callback_start(message):
     print('calback start')
     try:
@@ -86,7 +88,7 @@ def callback_start(message):
                                                  MARKUP_REGISTRO)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'Lista De Gastos')
+@payment_bot.callback_query_handler('Lista De Gastos')
 def lista_de_pagos(message):
     print('lista de pagos')
     try:
@@ -97,7 +99,7 @@ def lista_de_pagos(message):
         telegram_tools.send_only_markup(payment_bot, chat_id, message_id, MARKUP_PAYMENT_CONFIGURATION)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'Registrarse')
+@payment_bot.callback_query_handler('Registrarse')
 def registro(message):
     print('registro')
     try:
@@ -114,7 +116,7 @@ def registro(message):
             start(message, 'Tu registro fue exitoso \n')
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'show_list')
+@payment_bot.callback_query_handler('show_list')
 def show_list(message):
     print('Show_list')
     try:
@@ -138,7 +140,7 @@ def show_list(message):
 #     start(message)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'new_payment')
+@payment_bot.callback_query_handler('new_payment')
 def new_payment(message):
     print('new paymnet')
     try:
@@ -150,7 +152,7 @@ def new_payment(message):
         BOT_DICT_FLAGS[chat_id] = {FLAG_NEW_PAYMENT: deepcopy(message)}
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'help_new_payment')
+@payment_bot.callback_query_handler('help_new_payment')
 def help_new_payment(message):
     print('help new payment')
     try:
@@ -161,7 +163,7 @@ def help_new_payment(message):
         telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, MESSAGE_AYUDA_NEW_PAYMENT, MARKUP_HOME)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'help_add_date')
+@payment_bot.callback_query_handler('help_add_date')
 def help_add_date(message):
     try:
         chat_id, message_id = telegram_tools.get_chat_id_and_message_id(message, True, tools_sqlite.name_database)
@@ -172,7 +174,7 @@ def help_add_date(message):
                                              MARKUP_GO_LIST_PAYMENTS)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'Limpiar chat')
+@payment_bot.callback_query_handler('Limpiar chat')
 def delete_message(message):
     print('delete_message')
     try:
@@ -181,11 +183,11 @@ def delete_message(message):
         logger.warning('Error al obtener el chat_id')
     else:
         telegram_tools.delete_all_message(TOKEN, chat_id, tools_sqlite.name_database)
-        tools_sqlite.delete_all_message_id_db(tools_sqlite.create_connection(tools_sqlite.name_database),
-                                              chat_id)
+        tools_sqlite.delete_all_message_id_of_db(tools_sqlite.create_connection(tools_sqlite.name_database),
+                                                 chat_id)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'add_payment_date')
+@payment_bot.callback_query_handler('add_payment_date')
 def add_payment_date(message):
     print('add payment date')
     try:
@@ -198,7 +200,7 @@ def add_payment_date(message):
                                              MARKUP_GO_LIST_PAYMENTS)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'delete_payment')
+@payment_bot.callback_query_handler('delete_payment')
 def delete_payment(message):
     try:
         chat_id, message_id = telegram_tools.get_chat_id_and_message_id(message, True, tools_sqlite.name_database)
@@ -211,7 +213,7 @@ def delete_payment(message):
         show_list(message)
 
 
-@payment_bot.callback_query_handler(func=lambda message: message.data == 'do_payment')
+@payment_bot.callback_query_handler('do_payment')
 def do_payment(message):
     print('do payment')
     try:
@@ -226,7 +228,7 @@ def do_payment(message):
                                              MARKUP_GO_LIST_PAYMENTS)
 
 
-@payment_bot.message_handler(command='*')
+@payment_bot.message_handler('*')
 def texto_libre(message):
     print('texto libre')
     global BOT_DICT_FLAGS, NAME_PAYMENT
@@ -262,15 +264,15 @@ def texto_libre(message):
         except KeyError as details:
             print(f'Detalles key error: {details}')
             telegram_tools.delete_all_message(TOKEN, chat_id, tools_sqlite.name_database)
-            telegram_tools.delete_all_message_id_db(tools_sqlite.create_connection(tools_sqlite.name_database),
-                                                    chat_id)
+            telegram_tools.delete_all_message_id_of_db(tools_sqlite.create_connection(tools_sqlite.name_database),
+                                                       chat_id)
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  'Porfavor evita hacer spam', MARKUP_HOME)
         except AttributeError as details:
             print(f'Detalles AttributeError: {details}')
 
 
-@payment_bot.callback_query_handler(func=lambda message: True)
+@payment_bot.callback_query_handler('*')
 def callback_generic(message):
     print('callback generic')
     global BOT_DICT_FLAGS, NAME_PAYMENT
@@ -308,4 +310,7 @@ def aviso_de_mantenimiento(message='El bot entrara en mantenimiento.'):
 
 if __name__ == '__main__':
     print('iniciando')
+    logging.basicConfig(level=logging.INFO, format='%(name)s - %(lineno)s - %(message)s')
+    print(payment_bot.commands_query_handler)
+    print(payment_bot.commands_message_handler)
     payment_bot.start()

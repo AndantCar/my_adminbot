@@ -1,19 +1,16 @@
 #!/usr/bin/python3
 # -*- encoding:utf-8 -*-
 
-import datetime
-import os
 import json
-import pickle
 import logging
-
+import os
+import pickle
 from copy import deepcopy
 
 import requests
-
 from telebot import types
-from tools.tools_sqlite import save_message_id, create_connection, get_all_message_id, delete_all_message_id_db
 
+from tools.tools_sqlite import save_message_id, create_connection, get_all_message_id, delete_all_message_id_of_db
 
 __author__ = 'Carlos Añorve'
 __version__ = '1.0'
@@ -39,7 +36,7 @@ levels = {'1': logging.DEBUG,
           '4': logging.ERROR,
           '5': logging.CRITICAL}
 
-#logging.basicConfig(level=levels[level_debug],
+# logging.basicConfig(level=levels[level_debug],
 #                    format='%(asctime)s - %(name)s - %(message)s')
 
 TOKEN = '635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg'
@@ -442,6 +439,10 @@ def delete_message(token, chat_id, message_id):
             pass
 
 
+def delete_all_message_id_db(conn, chat_id):
+    delete_all_message_id_of_db(conn, chat_id)
+
+
 def delete_message_from_bot(bot, chat_id, message_id):
     """
     Args:
@@ -456,6 +457,7 @@ def delete_message_from_bot(bot, chat_id, message_id):
         logger.warning(f'Error al eliminar el mensaje con id {message_id}\n'
                        f'Detalles: {details}')
 
+
 def delete_all_message(token, chat_id, name_database):
     """
 
@@ -466,6 +468,7 @@ def delete_all_message(token, chat_id, name_database):
     """
     message_ids = get_all_message_id(create_connection(name_database), chat_id)
     for message_id in message_ids:
+        logger.info(f'Borrando el mensaje con id {message_id} del chat con id {chat_id}')
         delete_message(token, chat_id, message_id)
 
 
@@ -609,6 +612,7 @@ def send_message_from_bot(bot, chat_id, message_id, message, markup=None, parse_
         None
     """
     try:
+        print(chat_id, message, markup, parse_mode, message_id)
         bot.edit_message_text(chat_id=chat_id, text=message,
                               reply_markup=markup,
                               parse_mode=parse_mode,

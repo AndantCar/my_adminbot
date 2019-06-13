@@ -193,7 +193,7 @@ def get_all_message_id(conn, chat_id):
     return messages_ids
 
 
-def delete_all_message_id_db(conn, chat_id):
+def delete_all_message_id_of_db(conn, chat_id):
     """
 
     :param conn:

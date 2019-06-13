@@ -67,8 +67,8 @@ if __name__ == '__main__':
     try:
         print('Inicializando el bot')
         logging.basicConfig(level=levels[level_log],
-                            format='%(asctime)s - %(lineno)d - %(name)s - %(message)s',
-                            filename=f'My_admin_log{datetime.today().date()}.log')
+                            format='%(asctime)s - %(lineno)d - %(name)s - %(message)s')
+        #                    filename=f'My_admin_log{datetime.today().date()}.log')
         if not os.path.exists('database'):
             os.mkdir('database')
         if not os.path.exists(tools_sqlite.name_database):

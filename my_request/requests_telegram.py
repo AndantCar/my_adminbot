@@ -3,7 +3,6 @@
 
 import datetime
 import logging
-import os
 import queue
 import threading
 import time
@@ -11,7 +10,6 @@ import time
 import requests
 
 from my_request import sqlite_tools
-from my_request import telegram_tools
 from my_request import telegram_types
 
 logger = logging.getLogger('my_requests')
@@ -87,10 +85,12 @@ class WorkerProcess(threading.Thread):
 
     def process_new_callback_query(self, new_callback_query):
         for message in new_callback_query:
-            if self.__check_date(message):
-                comand_func = self.get_func_work(message.data)
-                if comand_func:
-                    self.__exec_func(comand_func['function'], message)
+            #if self.__check_date(message):
+            comand_func = self.get_func_work(message.data)
+            if comand_func:
+                self.__exec_func(comand_func['function'], message)
+            else:
+                print('demasiado lento')
 
     def get_func_work(self, command):
         func = self.commands_message_handler.get(command)
@@ -107,8 +107,22 @@ class WorkerProcess(threading.Thread):
         func(*args, **kwargs)
 
     def __check_date(self, message):
-        hora_mensaje = datetime.datetime.fromtimestamp(message.date)
+        hora_mensaje = self.get_date(message)
+        print('hora mensaje', hora_mensaje)
+        print('diferenciad e tiepo', datetime.datetime.today() - hora_mensaje)
         return (datetime.datetime.today() - hora_mensaje) < self.timeout
+
+    @staticmethod
+    def get_date(message):
+        try:
+            date = message.date
+        except AttributeError:
+            return True
+        else:
+            date = datetime.datetime.fromtimestamp(date)
+            hoy = datetime.datetime.today()
+            date = date.replace(year=hoy.year, month=hoy.month, day=hoy.day)
+            return date
 
 
 class WorkerGetUpdates(threading.Thread):
@@ -133,6 +147,7 @@ class WorkerGetUpdates(threading.Thread):
                 self.__logger.debug('Sin datos')
             for last_data_id in datas:
                 if last_data_id > self.last_data:
+                    print('last_id', last_data_id)
                     self.last_data = last_data_id
                     self.__proccess_new_message(datas[last_data_id])
         self.db.insert_data_last_id_update(self.last_data)
@@ -171,6 +186,7 @@ class TelegramBot:
         self.commands_message_handler = {}
         self.commands_query_handler = {}
 
+    # Metodos de control del hilo
     def make_workers(self):
         self.worker_get_update = WorkerGetUpdates(self.__name, self.queue_message, self.__token)
         self.worker_process = WorkerProcess(self.__name, self.queue_message, self.commands_message_handler,
@@ -195,7 +211,8 @@ class TelegramBot:
         if not self.queue_message.empty():
             return self.queue_message.get()
 
-    def message_handler(self, command=None, func=None):
+    # Metodos decoradores de funciones
+    def message_handler(self, command, func=None):
         def decorator(handler):
             handler_dict = self.__build_handler_dict(handler, func=func)
             self.__add_new_command(command, handler_dict, 'message')
@@ -203,14 +220,16 @@ class TelegramBot:
 
         return decorator
 
-    def callback_query_handler(self, command=None, func=None):
+    def callback_query_handler(self, command, func=None):
         def decorator(handler):
-            handler_dict = self.__build_handler_dict(handler, func=func)
+            handler_dict = self.__build_handler_dict(handler,
+                                                     func=func if func else lambda message: message.data == command)
             self.__add_new_command(command, handler_dict, 'query')
             return handler
 
         return decorator
 
+    # Metodos privados para la clase
     @staticmethod
     def __build_handler_dict(handler, **filters):
         return {
@@ -224,31 +243,7 @@ class TelegramBot:
         elif type_comand == 'query':
             self.commands_query_handler[command] = handler_dict
 
-    # def send_message(self, chat_id, message, parse_mode='HTML'):
-    #     """
-    #     Envia un mensaje al chat espesificado a travez de la api de telegram bot
-    #
-    #     Args:
-    #         chat_id(int, str): id que identifica al chat.
-    #         message(str): Mensaje ue se quiere enviar.
-    #         token(str): token espesifico del bot que se quiere utilizar
-    #         parse_mode(str): Tipo de parser que se utilizara para enviar el mensaje.
-    #
-    #     Returns:
-    #          None
-    #     """
-    #     method_url = r'sendMessage'
-    #     params = {'chat_id': str(chat_id), 'text': message, 'parse_mode': parse_mode}
-    #     try:
-    #         response = self.make_requests(self.__token, method_url, params)
-    #     except Exception as details:
-    #         logger.warning('Error al intentar enviar el mensaje.\n'
-    #                        'Details: {}'.format(details))
-    #         raise MethodRequestError(details)
-    #     else:
-    #         self.request_is_ok(response)
-    #     return response
-
+    # Metodos funcionales para interfasear con la api
     def edit_message_text(self, text, chat_id=None, message_id=None, inline_message_id=None, parse_mode=None,
                           disable_web_page_preview=None, reply_markup=None):
         method_url = r'editMessageText'
@@ -265,9 +260,7 @@ class TelegramBot:
             params['disable_web_page_preview'] = disable_web_page_preview
         if reply_markup:
             params['reply_markup'] = self._convert_markup(reply_markup)
-        result = self.make_requests(self.__token, method_url, params)
-        if result:
-            return telegram_types.Message.de_json(result)
+        return self.make_requests(self.__token, method_url, params, method='post')
 
     def edit_message_reply_markup(self, chat_id=None, message_id=None, inline_message_id=None, reply_markup=None):
         method_url = r'editMessageReplyMarkup'
@@ -301,10 +294,9 @@ class TelegramBot:
             payload['parse_mode'] = parse_mode
         if disable_notification:
             payload['disable_notification'] = disable_notification
-        result = self.make_requests(self.__token, method_url, params=payload, method='get')
-        if result:
-            return telegram_types.Message.de_json(result)
+        return self.make_requests(self.__token, method_url, params=payload, method='post')
 
+    # Metodos auxiliares para los metodos que interfasean con la API de telegram
     def make_requests(self, token, method_url, params, method='get'):
         if method.lower() == 'get':
             result = requests.get(url=base_url.format(token, method_url), params=params).json()
@@ -312,17 +304,23 @@ class TelegramBot:
             result = requests.post(url=base_url.format(token, method_url), params=params).json()
         else:
             return None
-        if result['ok']:
+        if self.request_is_ok(result):
             self.__logger.info(f'Se ejecuto correctamente el metodo {method_url}')
-            return result.get('result')
+            result = result.get('result')
+            if result:
+                return telegram_types.Message.de_json(result)
+            else:
+                raise MethodRequestError(method_url)
         else:
             self.__logger.warning(f'Error al ejecutar el metodo {method_url}: {result}')
+            raise MethodRequestError(method_url)
 
     @staticmethod
     def _convert_markup(markup):
-        if isinstance(markup, telegram_types.JsonSerializable):
+        try:
             return markup.to_json()
-        return markup
+        except Exception as details:
+            return markup
 
     @staticmethod
     def request_is_ok(response):
@@ -335,7 +333,7 @@ class TelegramBot:
         Returns:
             None
         """
-        if response['ok']:
+        if response.get('ok'):
             logger.debug('La solisutd se ejecuto correctamente.')
             return True
         else:
@@ -347,4 +345,3 @@ class TelegramBot:
 class MethodRequestError(Exception):
     def __init__(self, message):
         super(Exception, self).__init__(message)
-
