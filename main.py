@@ -3,6 +3,7 @@ import os
 import telebot
 import logging
 import urllib3
+from datetime import datetime
 
 import requests
 from tools import tools_sqlite
@@ -19,7 +20,7 @@ BOT_DICT_FLAGS = {}
 NAME_PAYMENT = ''
 
 
-level_log = '1'
+level_log = '2'
 levels = {'1': logging.DEBUG,
           '2': logging.INFO,
           '3': logging.WARNING,
@@ -57,8 +58,8 @@ if __name__ == '__main__':
     try:
         print('Inicializando el bot')
         logging.basicConfig(level=levels[level_log],
-                            format='%(asctime)s - %(lineno)d - %(name)s - %(message)s')
-        #                    filename=f'My_admin_log{datetime.today().date()}.log')
+                            format='%(asctime)s - %(lineno)d - %(name)s - %(message)s',
+                            filename=f'My_admin_log{datetime.today().date()}.log')
         if not os.path.exists('database'):
             os.mkdir('database')
         if not os.path.exists(tools_sqlite.name_database):

@@ -33,6 +33,7 @@ class WorkerProcess(threading.Thread):
             if not self.queue_message.empty():
                 message = self.queue_message.get()
                 self.process_new_update(message)
+            time.sleep(.25)
 
     def stop(self):
         if not self.__stop.is_set():

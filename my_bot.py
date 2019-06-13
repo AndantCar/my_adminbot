@@ -270,6 +270,7 @@ def callback_generic(message):
                 NAME_PAYMENT = datos[0][1]
                 telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, status_message,
                                                      MARKUP_PAYMENT_MENU)
+                NAME_PAYMENT = ''
             except IndexError:
                 restart_flags()
 
