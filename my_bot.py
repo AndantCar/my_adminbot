@@ -13,7 +13,7 @@ logger = logging.getLogger('BinanceBot')
 BOT_DICT_FLAGS = {}
 NAME_PAYMENT = ''
 
-level_log = '1'
+level_log = '2'
 levels = {'1': logging.DEBUG,
           '2': logging.INFO,
           '3': logging.WARNING,
@@ -83,7 +83,9 @@ def lista_de_pagos(message):
     except TypeError as details:
         logger.warning(f'Error al obtener el chat_id\nDetalles: {details}\nMessage: {message}')
     else:
-        telegram_tools.send_only_markup(payment_bot, chat_id, message_id, MARKUP_PAYMENT_CONFIGURATION)
+        message_to_send = MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
+        telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, message_to_send,
+                                             MARKUP_PAYMENT_CONFIGURATION)
 
 
 @payment_bot.callback_query_handler('Registrarse')
@@ -120,6 +122,7 @@ def show_list(message):
         else:
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, 'Aun no hay pagos registrados',
                                                  MARKUP_HOME)
+
 
 @payment_bot.callback_query_handler('new_payment')
 def new_payment(message):
@@ -273,6 +276,7 @@ def callback_generic(message):
                 NAME_PAYMENT = ''
             except IndexError:
                 restart_flags()
+    restart_flags()
 
 
 def restart_flags():

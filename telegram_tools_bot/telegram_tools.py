@@ -8,7 +8,7 @@ import pickle
 from copy import deepcopy
 
 import requests
-from telebot import types
+from telegram_tools_bot import telegram_types as types
 
 from tools.tools_sqlite import save_message_id, create_connection, get_all_message_id, delete_all_message_id_of_db
 
@@ -35,9 +35,6 @@ levels = {'1': logging.DEBUG,
           '3': logging.WARNING,
           '4': logging.ERROR,
           '5': logging.CRITICAL}
-
-# logging.basicConfig(level=levels[level_debug],
-#                    format='%(asctime)s - %(name)s - %(message)s')
 
 TOKEN = '635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg'
 URL_API = 'https://api.telegram.org/bot{0}/{1}'
