@@ -169,6 +169,7 @@ def delete_message(message):
         telegram_tools.delete_all_message(TOKEN, chat_id, tools_sqlite.name_database)
         tools_sqlite.delete_all_message_id_of_db(tools_sqlite.create_connection(tools_sqlite.name_database),
                                                  chat_id)
+        start(message)
 
 
 @payment_bot.callback_query_handler('add_payment_date')
