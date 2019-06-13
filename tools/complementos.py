@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- encoding:utf-8 -*-
 
-from my_request import telegram_tools
+from telegram_tools_bot import telegram_tools
 
 # Variables de control de flujo
 

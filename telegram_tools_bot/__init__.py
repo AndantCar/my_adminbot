@@ -9,18 +9,13 @@ import time
 
 import requests
 
-from my_request import sqlite_tools
-from my_request import telegram_types
+from telegram_tools_bot import sqlite_tools
+from telegram_tools_bot import telegram_types
 
 logger = logging.getLogger('my_requests')
 
 # token_bot = os.getenv('token')
 base_url = 'https://api.telegram.org/bot{}/{}'
-
-
-class TelegramTools:
-    def __init__(self):
-        pass
 
 
 class WorkerProcess(threading.Thread):
@@ -31,7 +26,7 @@ class WorkerProcess(threading.Thread):
         self.__stop = threading.Event()
         self.timeout = datetime.timedelta(seconds=timeout)
         self.commands_message_handler = commands_message_handler
-        self.commands_qquery_handler = commands_qquery_handler
+        self.commands_query_handler = commands_qquery_handler
 
     def run(self) -> None:
         while not self.__stop.is_set():
@@ -79,27 +74,30 @@ class WorkerProcess(threading.Thread):
     def process_new_messages(self, new_messages):
         for message in new_messages:
             if self.__check_date(message):
-                comand_func = self.get_func_work(message.text)
+                comand_func = self.get_func_work(message.text, 'message')
                 if comand_func:
                     self.__exec_func(comand_func['function'], message)
 
     def process_new_callback_query(self, new_callback_query):
         for message in new_callback_query:
-            #if self.__check_date(message):
-            comand_func = self.get_func_work(message.data)
+            comand_func = self.get_func_work(message.data, 'query')
             if comand_func:
                 self.__exec_func(comand_func['function'], message)
             else:
-                print('demasiado lento')
+                pass
 
-    def get_func_work(self, command):
+    def get_func_work(self, command, type_message):
         func = self.commands_message_handler.get(command)
-        func = func if func else self.commands_qquery_handler.get(command)
+        func = func if func else self.commands_query_handler.get(command)
         if func:
             return func
         else:
-            func = self.commands_message_handler.get('*')
-            func = func if func else self.commands_qquery_handler.get('*')
+            if type_message == 'message':
+                func = self.commands_message_handler.get('/*')
+            elif type_message == 'query':
+                func = func if func else self.commands_query_handler.get('*')
+            else:
+                func = None
             return func
 
     @staticmethod
@@ -108,8 +106,6 @@ class WorkerProcess(threading.Thread):
 
     def __check_date(self, message):
         hora_mensaje = self.get_date(message)
-        print('hora mensaje', hora_mensaje)
-        print('diferenciad e tiepo', datetime.datetime.today() - hora_mensaje)
         return (datetime.datetime.today() - hora_mensaje) < self.timeout
 
     @staticmethod
@@ -147,9 +143,9 @@ class WorkerGetUpdates(threading.Thread):
                 self.__logger.debug('Sin datos')
             for last_data_id in datas:
                 if last_data_id > self.last_data:
-                    print('last_id', last_data_id)
                     self.last_data = last_data_id
                     self.__proccess_new_message(datas[last_data_id])
+            time.sleep(1)
         self.db.insert_data_last_id_update(self.last_data)
 
     def stop(self):
@@ -192,7 +188,7 @@ class TelegramBot:
         self.worker_process = WorkerProcess(self.__name, self.queue_message, self.commands_message_handler,
                                             self.commands_query_handler, self.timeout)
 
-    def start(self):
+    def start_bot(self):
         self.make_workers()
         self.worker_get_update.start()
         self.worker_process.start()
@@ -204,12 +200,20 @@ class TelegramBot:
                 time.sleep(.25)
             except KeyboardInterrupt:
                 break
+            except Exception as details:
+                self.__logger.error('Un error desconocido ocurrio en la ejecucion del bot probocando al salida.\n'
+                                    f'Detalles: {details}')
+                break
         self.worker_get_update.stop()
         self.worker_process.stop()
 
     def get_message(self):
         if not self.queue_message.empty():
             return self.queue_message.get()
+
+    def stop_bot(self):
+        self.worker_get_update.stop()
+        self.worker_process.stop()
 
     # Metodos decoradores de funciones
     def message_handler(self, command, func=None):

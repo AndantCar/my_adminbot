@@ -1,29 +1,17 @@
 #!/usr/bin/python3
 # -*- encoding:utf-8 -*-
 
-# import os
-# import time
 import logging
-import telebot
-from my_request.requests_telegram import TelegramBot
-
-# from DemonioNotificador import CheckStatus
-# from datetime import datetime
 from copy import deepcopy
 
-# import requests
-from my_request import telegram_tools
+from telegram_tools_bot import TelegramBot
 from tools import tools_sqlite
 from tools.complementos import *
-logger = logging.getLogger('BinanceBot')
 
-__author__ = 'Carlos Añorve'
-__version__ = '1.0'
-__all__ = []
+logger = logging.getLogger('BinanceBot')
 
 BOT_DICT_FLAGS = {}
 NAME_PAYMENT = ''
-
 
 level_log = '1'
 levels = {'1': logging.DEBUG,
@@ -34,7 +22,6 @@ levels = {'1': logging.DEBUG,
 
 logger.info('inicializando todo lo necesario...')
 
-# TOKEN = '558805340:AAEHYOza2FtWwORvAtdJMzV41r7ZCyITUHM'
 TOKEN = '635048049:AAHmD4MK8AgiiMEzp8ZntRl5EfbQRa7aMVg'
 
 # BOT
@@ -134,12 +121,6 @@ def show_list(message):
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, 'Aun no hay pagos registrados',
                                                  MARKUP_HOME)
 
-
-# @payment_bot.callback_query_handler(func=lambda message: message.data == 'go_start')
-# def go_start(message):
-#     start(message)
-
-
 @payment_bot.callback_query_handler('new_payment')
 def new_payment(message):
     print('new paymnet')
@@ -228,7 +209,7 @@ def do_payment(message):
                                              MARKUP_GO_LIST_PAYMENTS)
 
 
-@payment_bot.message_handler('*')
+@payment_bot.message_handler('/*')
 def texto_libre(message):
     print('texto libre')
     global BOT_DICT_FLAGS, NAME_PAYMENT
@@ -238,8 +219,6 @@ def texto_libre(message):
         logger.warning('Error al obtener el chat_id')
     else:
         try:
-            print(BOT_DICT_FLAGS)
-            print(BOT_DICT_FLAGS[chat_id])
             if list(BOT_DICT_FLAGS[chat_id].keys())[0] == FLAG_NEW_PAYMENT:
                 tools_sqlite.create_payment(tools_sqlite.create_connection(tools_sqlite.name_database),
                                             message.text,
@@ -311,6 +290,4 @@ def aviso_de_mantenimiento(message='El bot entrara en mantenimiento.'):
 if __name__ == '__main__':
     print('iniciando')
     logging.basicConfig(level=logging.INFO, format='%(name)s - %(lineno)s - %(message)s')
-    print(payment_bot.commands_query_handler)
-    print(payment_bot.commands_message_handler)
-    payment_bot.start()
+    payment_bot.start_bot()

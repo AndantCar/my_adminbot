@@ -1,11 +1,8 @@
 
 import os
-import time
 import telebot
 import logging
 import urllib3
-
-from datetime import datetime
 
 import requests
 from tools import tools_sqlite
@@ -46,19 +43,12 @@ def main(estatus='Iniciando'):
     """
     print(f'Status: {estatus}')
     try:
-        my_bot.payment_bot.polling()
-    except telebot.apihelper.ApiException:
-        my_bot.payment_bot.stop_bot()
-        my_bot.aviso_de_mantenimiento('Error en la api del bot')
+        my_bot.payment_bot.start_bot()
+    except Exception as detils:
+        my_bot.aviso_de_mantenimiento(f'Error en la api del bot. Detalles: {detils}')
     except KeyboardInterrupt:
         my_bot.aviso_de_mantenimiento()
         logger.info('Finish')
-    except (urllib3.exceptions.MaxRetryError, urllib3.exceptions.ProtocolError) as details:
-        print(f'Errror 1: {details}')
-    except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout) as details:
-        print(f'Errror 2: {details}')
-    except OSError as details:
-        print(f'Errror 3: {details}')
     finally:
         my_bot.payment_bot.stop_bot()
 
@@ -79,4 +69,5 @@ if __name__ == '__main__':
         check_dates.end_task()
         print('Finalizo el proceso')
     except Exception:
+        my_bot.payment_bot.stop_bot()
         print('Me rompi aqui')

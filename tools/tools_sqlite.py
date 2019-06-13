@@ -338,28 +338,4 @@ def get_all_dates(conn):
 if __name__ == '__main__':
     name_database = os.path.join(os.getcwd(), 'base_payments.db')
     if not os.path.exists(name_database):
-        print('1')
         make_database_and_tables()
-    # main()
-    # create_user(create_connection(name_database), ('carlos', '1234'))
-    # save_message_id(create_connection(name_database), '123454321', '1234')
-    # print(get_all_message_id(create_connection(name_database), '1234'))
-    # create_payment(create_connection(name_database), 'renta', 1234)
-    # print(payments_list(create_connection(name_database), '1234'))
-    # print(get_all_users(create_connection(name_database)))
-    # print(get_user(create_connection(name_database), '1231'))
-    # add_date_of_payment(create_connection(name_database), 1234, '15M')
-    # update_status(create_connection(name_database), 1234)
-    # print(get_status_payment(create_connection(name_database), 'renta', 1234))
-    # fechas = get_all_dates(create_connection(name_database))
-    # for fecha in fechas:
-    #     date_time_obj = datetime.strptime(fecha, '%Y-%m-%d')
-    #     hoy = datetime.today()
-    #     if date_time_obj.date() == hoy.date() or \
-    #             date_time_obj.date() == hoy.replace(day=hoy.day+1).date():
-    #         for user in fechas[fecha]:
-    #             print(f'{get_name(create_connection(name_database), user[0])} '
-    #                   f'No olvides realizar el pago de: {user[1]}')
-
-
-
