@@ -47,7 +47,7 @@ def start(message, message_extra: str = ''):
             message_to_send = message_extra + MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  message_to_send,
-                                                 MARKUP_LISTA_DE_PAGOS)
+                                                 MARKUP_MENU_PRINCIPAL)
         else:
             logger.info('Entre al else de /staet')
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
@@ -63,7 +63,7 @@ def callback_start(message, chat_id, message_id):
         message_to_send = MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
         telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                              message_to_send,
-                                             MARKUP_LISTA_DE_PAGOS)
+                                             MARKUP_MENU_PRINCIPAL)
     else:
         telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                              MESSAGE_NEW_USER.format(telegram_tools.get_name(message)),
