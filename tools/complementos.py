@@ -7,7 +7,7 @@ from telegram_tools_bot import telegram_tools
 
 # MARKUPS
 MARKUP_MENU_PRINCIPAL = telegram_tools.make_button_of_list(
-    ['Lista De Gastos', 'Administraar contraseñas', 'Administrador de tareas', 'Limpiar chat'])
+    ['Lista De Gastos', 'Administraar contraseñas', 'Administrador de tareas', 'Base de datos', 'Limpiar chat'])
 MARKUP_REGISTRO = telegram_tools.make_button_of_list(['Registrarse'])
 MARKUP_PAYMENT_CONFIGURATION = telegram_tools.make_buttons_of_dict({'Mostrar lista': 'show_list',
                                                                     'Añadir un pago': 'new_payment',
@@ -45,6 +45,7 @@ MESSAGE_AYUDA_ADD_DATE = PLANTILLA.format(f'Para asignar la frecuencia con la qu
 MESSAGE_STATUS_PAYMENT = PLANTILLA.format('Nombre: {}\nStatus: {}\nFecha limite: {}')
 MESSAGE_ADD_DATE = PLANTILLA.format('Asigne con que frecuencia se realizará el pago')
 MESSAGE_DEVELOP = PLANTILLA.format('Esta opción un esta en desarollo.')
+MESSAGE_GET_DATABASE = PLANTILLA.format('Esta es la base de datos mas reciente.')
 
 # Flags
 FLAG_NEW_PAYMENT = 1

@@ -2,6 +2,7 @@
 # -*- encoding:utf-8 -*-
 
 import logging
+import os
 from copy import deepcopy
 
 from telegram_tools_bot import TelegramBot
@@ -75,7 +76,7 @@ def lista_de_pagos(message, chat_id, message_id):
     print('lista de pagos')
     message_to_send = MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
     telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, message_to_send,
-                                             MARKUP_PAYMENT_CONFIGURATION)
+                                         MARKUP_PAYMENT_CONFIGURATION)
 
 
 @payment_bot.callback_query_handler('Registrarse')
@@ -225,6 +226,15 @@ def manager_passwords(message, chat_id, message_id):
 def manager_tasks(message, chat_id, message_id):
     print('Administrador de tareas')
     telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, MESSAGE_DEVELOP, MARKUP_HOME)
+
+
+@payment_bot.callback_query_handler('Base de datos')
+def get_database(message, chat_id, message_id):
+    try:
+        with open(os.path.join('database', tools_sqlite.name_database), 'rb') as data:
+            payment_bot.send_data(chat_id, data, 'document', MESSAGE_GET_DATABASE, MARKUP_HOME, 'HTML')
+    except Exception as details:
+        logger.error(f'Error al intentar enviar la base de datos.\n Detalles: {details}')
 
 
 def restart_flags():

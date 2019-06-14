@@ -8,11 +8,17 @@ import threading
 import time
 
 import requests
+try:
+    from requests.packages.urllib3 import fields
+    format_header_param = fields.format_header_param
+except ImportError:
+    format_header_param = None
 
 from telegram_tools_bot import sqlite_tools
 from telegram_tools_bot import telegram_tools
 from telegram_tools_bot import telegram_types
 from tools import tools_sqlite
+from telebot import util
 
 logger = logging.getLogger('my_requests')
 
@@ -269,7 +275,7 @@ class TelegramBot:
             params['disable_web_page_preview'] = disable_web_page_preview
         if reply_markup:
             params['reply_markup'] = self._convert_markup(reply_markup)
-        return self.make_requests(self.__token, method_url, params, method='post')
+        return self.__make_requests(self.__token, method_url, params, method='post')
 
     def edit_message_reply_markup(self, chat_id=None, message_id=None, inline_message_id=None, reply_markup=None):
         method_url = r'editMessageReplyMarkup'
@@ -282,12 +288,12 @@ class TelegramBot:
             params['inline_message_id'] = inline_message_id
         if reply_markup:
             params['reply_markup'] = self._convert_markup(reply_markup)
-        return self.make_requests(self.__token, method_url, params=params)
+        return self.__make_requests(self.__token, method_url, params=params)
 
     def delete_message(self, chat_id, message_id):
         method_url = r'deleteMessage'
         params = {'chat_id': chat_id, 'message_id': message_id}
-        return self.make_requests(self.__token, method_url, params=params)
+        return self.__make_requests(self.__token, method_url, params=params)
 
     def send_message(self, chat_id, text, disable_web_page_preview=None, reply_to_message_id=None, reply_markup=None,
                      parse_mode=None, disable_notification=None):
@@ -303,17 +309,38 @@ class TelegramBot:
             payload['parse_mode'] = parse_mode
         if disable_notification:
             payload['disable_notification'] = disable_notification
-        return self.make_requests(self.__token, method_url, params=payload, method='post')
+        return self.__make_requests(self.__token, method_url, params=payload, method='post')
+
+    def send_data(self, chat_id, data, data_type, reply_to_message_id=None, reply_markup=None, parse_mode=None,
+                  disable_notification=None, timeout=None, caption=None):
+        method_url = self.__get_method_by_type(data_type)
+        payload = {'chat_id': chat_id}
+        files = None
+        if not util.is_string(data):
+            files = {data_type: data}
+        else:
+            payload[data_type] = data
+        if reply_to_message_id:
+            payload['reply_to_message_id'] = reply_to_message_id
+        if reply_markup:
+            payload['reply_markup'] = self._convert_markup(reply_markup)
+        if parse_mode and data_type == 'document':
+            payload['parse_mode'] = parse_mode
+        if disable_notification:
+            payload['disable_notification'] = disable_notification
+        if timeout:
+            payload['connect-timeout'] = timeout
+        if caption:
+            payload['caption'] = caption
+        return self.__make_requests(self.__token, method_url, params=payload, files=files, method='post')
 
     # Metodos auxiliares para los metodos que interfasean con la API de telegram
-    def make_requests(self, token, method_url, params, method='get'):
-        if method.lower() == 'get':
-            result = requests.get(url=base_url.format(token, method_url), params=params).json()
-        elif method.lower() == 'post':
-            result = requests.post(url=base_url.format(token, method_url), params=params).json()
-        else:
-            return None
-        if self.request_is_ok(result):
+    def __make_requests(self, token, method_url, params=None, files=None, method='get'):
+        ses = requests.Session()
+        if files and format_header_param:
+            fields.format_header_param = self._no_encode(format_header_param)
+        result = ses.request(method, url=base_url.format(token, method_url), params=params, files=files).json()
+        if self.__request_is_ok(result):
             self.__logger.info(f'Se ejecuto correctamente el metodo {method_url}')
             result = result.get('result')
             if result:
@@ -332,7 +359,7 @@ class TelegramBot:
             return markup
 
     @staticmethod
-    def request_is_ok(response):
+    def __request_is_ok(response):
         """
         Verifica que la espuesta de la solicitud sea satisfactoria.
 
@@ -349,6 +376,23 @@ class TelegramBot:
             logger.warning('Algun error ocurrio en la solicitud.\n'
                            'Error: {}'.format(response))
             raise MethodRequestError('Codigo de error: {}'.format(response))
+
+    @staticmethod
+    def _no_encode(func):
+        def wrapper(key, val):
+            if key == 'filename':
+                return u'{0}={1}'.format(key, val)
+            else:
+                return func(key, val)
+
+        return wrapper
+
+    @staticmethod
+    def __get_method_by_type(data_type):
+        if data_type == 'document':
+            return r'sendDocument'
+        if data_type == 'sticker':
+            return r'sendSticker'
 
 
 class MethodRequestError(Exception):
