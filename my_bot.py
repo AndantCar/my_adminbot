@@ -47,7 +47,7 @@ def start(message, message_extra: str = ''):
             message_to_send = message_extra + MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  message_to_send,
-                                                 MARKUP_LISTA_DE_PAGOS)
+                                                 MARKUP_MENU_PRINCIPAL)
         else:
             logger.info('Entre al else de /staet')
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
@@ -68,7 +68,7 @@ def callback_start(message):
             message_to_send = MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  message_to_send,
-                                                 MARKUP_LISTA_DE_PAGOS)
+                                                 MARKUP_MENU_PRINCIPAL)
         else:
             telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
                                                  MESSAGE_NEW_USER.format(telegram_tools.get_name(message)),
@@ -278,6 +278,18 @@ def callback_generic(message):
             except IndexError:
                 restart_flags()
     restart_flags()
+
+
+@payment_bot.callback_query_handler('Administraar contraseñas')
+def manager_passwords(message, chat_id, message_id):
+    print('Administraar contraseñas')
+    telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, MESSAGE_DEVELOP, MARKUP_HOME)
+
+
+@payment_bot.callback_query_handler('Administrador de tareas')
+def manager_tasks(message, chat_id, message_id):
+    print('Administrador de tareas')
+    telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, MESSAGE_DEVELOP, MARKUP_HOME)
 
 
 def restart_flags():
