@@ -8,8 +8,8 @@ import pickle
 from copy import deepcopy
 
 import requests
-from telegram_tools_bot import telegram_types as types
 
+from telegram_tools_bot import telegram_types as types
 from tools.tools_sqlite import save_message_id, create_connection, get_all_message_id, delete_all_message_id_of_db
 
 __author__ = 'Carlos Añorve'
@@ -651,6 +651,22 @@ def get_me(token):
         request_is_ok(response)
     result = response2dict(response)
     return result
+
+
+def get_database(bot, chat_id, data, message, markup, parsemode='HTML'):
+    """
+    Use esta funcion para recuperar la o las bases de datos en el servidor.
+
+    Args:
+        bot(telegram_tools_bot.TelegramBot):
+    :return:
+    """
+    try:
+        result = bot.send_data(chat_id, data, 'document', message, markup, parsemode)
+    except Exception as details:
+        logger.warning(f'Ocurrio un problema al intentar recupeara el archivo. Detalles: {details}')
+    else:
+        return result
 
 
 class Button:
