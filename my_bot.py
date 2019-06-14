@@ -232,7 +232,7 @@ def manager_tasks(message, chat_id, message_id):
 def get_database(message, chat_id, message_id):
     try:
         with open(os.path.join('database', tools_sqlite.name_database), 'rb') as data:
-            payment_bot.send_data(chat_id, data, 'document', MESSAGE_GET_DATABASE, MARKUP_HOME, 'HTML')
+            telegram_tools.get_database(payment_bot, chat_id, data, MESSAGE_GET_DATABASE, MARKUP_HOME)
     except Exception as details:
         logger.error(f'Error al intentar enviar la base de datos.\n Detalles: {details}')
 
