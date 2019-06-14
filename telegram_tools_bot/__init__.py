@@ -10,7 +10,9 @@ import time
 import requests
 
 from telegram_tools_bot import sqlite_tools
+from telegram_tools_bot import telegram_tools
 from telegram_tools_bot import telegram_types
+from tools import tools_sqlite
 
 logger = logging.getLogger('my_requests')
 
@@ -77,15 +79,17 @@ class WorkerProcess(threading.Thread):
             if self.__check_date(message):
                 comand_func = self.get_func_work(message.text, 'message')
                 if comand_func:
-                    self.__exec_func(comand_func['function'], message)
+                    chat_id, message_id = telegram_tools.get_chat_id_and_message_id(message, True,
+                                                                                    tools_sqlite.name_database)
+                    self.__exec_func(comand_func['function'], message, chat_id, message_id)
 
     def process_new_callback_query(self, new_callback_query):
         for message in new_callback_query:
             comand_func = self.get_func_work(message.data, 'query')
             if comand_func:
-                self.__exec_func(comand_func['function'], message)
-            else:
-                pass
+                chat_id, message_id = telegram_tools.get_chat_id_and_message_id(message, True,
+                                                                                tools_sqlite.name_database)
+                self.__exec_func(comand_func['function'], message, chat_id, message_id)
 
     def get_func_work(self, command, type_message):
         func = self.commands_message_handler.get(command)

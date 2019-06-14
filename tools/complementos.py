@@ -22,6 +22,7 @@ MARKUP_PAYMENT_MENU = telegram_tools.make_buttons_of_dict({'Actualizar fecha de 
                                                            'Eliminar de la lista': 'delete_payment',
                                                            '<< Atras': 'show_list',
                                                            'Ayuda': 'help_add_date'}, 2)
+MARKUP_DEVELOP = telegram_tools.make_buttons_of_dict({'<<Ir a inicio': 'start'})
 
 # MESSAGES
 PLANTILLA = '''<b>{}</b>'''
