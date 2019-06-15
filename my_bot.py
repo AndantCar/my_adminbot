@@ -35,25 +35,20 @@ ACTIVE_CHAT = []
 
 
 @payment_bot.message_handler(command='/start')
-def start(message, message_extra: str = ''):
+def start(message, chat_id, message_id, message_extra: str = ''):
     print('start')
-    try:
-        chat_id, message_id = telegram_tools.get_chat_id_and_message_id(message, True, tools_sqlite.name_database)
-    except TypeError:
-        logger.warning('Error al obtener el chat_id')
+    if tools_sqlite.user_exist(tools_sqlite.create_connection(tools_sqlite.name_database),
+                               chat_id):
+        logger.info('Entre a el if de /staet')
+        message_to_send = message_extra + MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
+        telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
+                                             message_to_send,
+                                             MARKUP_MENU_PRINCIPAL)
     else:
-        if tools_sqlite.user_exist(tools_sqlite.create_connection(tools_sqlite.name_database),
-                                   chat_id):
-            logger.info('Entre a el if de /staet')
-            message_to_send = message_extra + MESSAGE_SALUDO_START.format(telegram_tools.get_name(message))
-            telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
-                                                 message_to_send,
-                                                 MARKUP_MENU_PRINCIPAL)
-        else:
-            logger.info('Entre al else de /staet')
-            telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
-                                                 MESSAGE_NEW_USER.format(telegram_tools.get_name(message)),
-                                                 MARKUP_REGISTRO)
+        logger.info('Entre al else de /staet')
+        telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id,
+                                             MESSAGE_NEW_USER.format(telegram_tools.get_name(message)),
+                                             MARKUP_REGISTRO)
 
 
 @payment_bot.callback_query_handler('start')
@@ -229,12 +224,22 @@ def manager_tasks(message, chat_id, message_id):
 
 
 @payment_bot.callback_query_handler('Base de datos')
+def database_menu(message, chat_id, message_id):
+    telegram_tools.send_message_from_bot(payment_bot, chat_id, message_id, MESSAGE_MENU_DATABSE, MARKUP_MENU_DATABASE)
+
+
+@payment_bot.callback_query_handler('get_database')
 def get_database(message, chat_id, message_id):
     try:
         with open(os.path.join('database', tools_sqlite.name_database), 'rb') as data:
             telegram_tools.get_database(payment_bot, chat_id, data, MESSAGE_GET_DATABASE, MARKUP_HOME)
     except Exception as details:
         logger.error(f'Error al intentar enviar la base de datos.\n Detalles: {details}')
+
+
+@payment_bot.callback_query_handler('update_database')
+def update_database(message, chat_id, message_id):
+    pass
 
 
 def restart_flags():
